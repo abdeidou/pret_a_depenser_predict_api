@@ -1,17 +1,13 @@
-import json
-from flask import Flask, request
-import pandas as pd
-import pickle
-from waitress import serve
+import os
 
-# Créer une instance de l'application Flask
+from flask import Flask
+
 app = Flask(__name__)
 
-@app.route('/hello')
-def hello():
-    return "Hello"
+@app.route("/")
+def hello_world():
+    name = os.environ.get("NAME", "World")
+    return "Hello {}!".format(name)
 
-# Lancer le processus flask
-if __name__ == '__main__':
-    serve(app, host="0.0.0.0", port=8080)
-#test
+if __name__ == "__main__":
+    app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
