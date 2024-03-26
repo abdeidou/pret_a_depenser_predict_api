@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="test google cloud">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="test git hub action" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -142,12 +140,29 @@
       <option name="project" value="LOCAL" />
       <updated>1711371655314</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="test git hub action">
+      <option name="closed" value="true" />
+      <created>1711454663566</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1711454663568</updated>
+    </task>
+    <task id="LOCAL-00009" summary="test git hub action">
+      <option name="closed" value="true" />
+      <created>1711454836477</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1711454836478</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test simple flask service" />
     <MESSAGE value="test google cloud" />
-    <option name="LAST_COMMIT_MESSAGE" value="test google cloud" />
+    <MESSAGE value="test git hub action" />
+    <option name="LAST_COMMIT_MESSAGE" value="test git hub action" />
   </component>
 </project>
