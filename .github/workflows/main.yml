@@ -9,6 +9,7 @@ env:
   APP_ID: credit-predict
   RUN_REGION: us-east1
   SA_KEY_JSON: ${{ secrets.GCP_SA_KEY_JSON }}
+  CLOUDSDK_PYTHON: /Users/aziz/opt/anaconda3/bin/python
 jobs:
   deploy:
     name: Deploy to Cloud Run
