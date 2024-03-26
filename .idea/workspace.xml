@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="test git hub action 28 to deploy">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
+    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="test git hub action 30 to deploy">
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,7 +278,31 @@
       <option name="project" value="LOCAL" />
       <updated>1711464694228</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="test git hub action 28 to deploy">
+      <option name="closed" value="true" />
+      <created>1711464833024</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1711464833024</updated>
+    </task>
+    <task id="LOCAL-00026" summary="test git hub action 29 to deploy">
+      <option name="closed" value="true" />
+      <created>1711464851640</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1711464851640</updated>
+    </task>
+    <task id="LOCAL-00027" summary="test git hub action 30 to deploy">
+      <option name="closed" value="true" />
+      <created>1711464995478</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1711464995478</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -309,6 +333,8 @@
     <MESSAGE value="test git hub action 26 to deploy" />
     <MESSAGE value="test git hub action 27 to deploy" />
     <MESSAGE value="test git hub action 28 to deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="test git hub action 28 to deploy" />
+    <MESSAGE value="test git hub action 29 to deploy" />
+    <MESSAGE value="test git hub action 30 to deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="test git hub action 30 to deploy" />
   </component>
 </project>

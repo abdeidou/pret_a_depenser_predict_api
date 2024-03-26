@@ -7,7 +7,7 @@ on:
 
 env:
   PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
-  APP_ID: continuous-deployment
+  APP_ID: credit-predict
   RUN_REGION: us-east1
   SA_KEY_JSON: ${{ secrets.GCP_SA_KEY_JSON }}
 
