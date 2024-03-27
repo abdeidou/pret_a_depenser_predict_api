@@ -13,10 +13,15 @@ def test():
     return "/test"
 
 @app.route('/double', methods=['GET'])
+@app.route('/double/', methods=['GET'])
 def double():
-    number = request.args.get("number")
-    result = number * 2
-    return str(result)
+    params = request.args.get("params")
+    try:
+        number = int(params)
+        result = number * 2
+        return str(result)
+    except ValueError:
+        return "Invalid input: Please provide a valid number."
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
