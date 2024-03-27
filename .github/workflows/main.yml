@@ -27,5 +27,5 @@ jobs:
 
     - name: Deploy via GCS
       run: |
-        gsutil -m rm -rf gs://pretadepenser/*
-        gsutil -m cp -r * gs://pretadepenser/
+        gsutil -m rm -rf gs://pretadepenser_cloudbuild/*
+        gsutil -m cp -r * gs://pretadepenser_cloudbuild/
