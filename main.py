@@ -5,8 +5,8 @@ app = Flask(__name__)
 
 
 @app.route("/")
-def hello_world():
-    return "Hello YouTube!! I hope you liked it"
+def hello():
+    return "flask api"
 
 @app.route('/double', methods=['GET'])
 def multiple():
