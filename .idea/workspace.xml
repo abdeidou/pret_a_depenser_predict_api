@@ -87,14 +87,6 @@
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
     </task>
-    <task id="LOCAL-00011" summary="test git hub action">
-      <option name="closed" value="true" />
-      <created>1711455392866</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1711455392866</updated>
-    </task>
     <task id="LOCAL-00012" summary="test git hub action 6">
       <option name="closed" value="true" />
       <created>1711455808347</created>
@@ -479,7 +471,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711544781891</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="change dockerfile to install requirements and load data to deploy">
+      <option name="closed" value="true" />
+      <created>1711545130624</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1711545130624</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
