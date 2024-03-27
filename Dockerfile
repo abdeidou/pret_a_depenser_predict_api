@@ -1,6 +1,6 @@
 # Use the official lightweight Python image.
 # https://hub.docker.com/_/python
-FROM python:3.9-slim
+FROM python:3
 
 # Allow statements and log messages to immediately appear in the Knative logs
 ENV PYTHONUNBUFFERED True
@@ -10,9 +10,8 @@ ENV APP_HOME /app
 WORKDIR $APP_HOME
 COPY . ./
 
-# Copy data folder into the container image.
-COPY data /app/data
 
+RUN pip install -r requirements.txt
 # Install production dependencies.
 RUN pip install Flask gunicorn
 

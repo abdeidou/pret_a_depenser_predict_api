@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="delete ignore files to deploy">
+    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="add data folder to dockerfile to deploy">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,14 +86,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
-    </task>
-    <task id="LOCAL-00013" summary="test git hub action to deploy">
-      <option name="closed" value="true" />
-      <created>1711455885122</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1711455885122</updated>
     </task>
     <task id="LOCAL-00014" summary="test git hub action 8 to deploy">
       <option name="closed" value="true" />
@@ -478,7 +471,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711546417944</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="add data folder to dockerfile to deploy">
+      <option name="closed" value="true" />
+      <created>1711549401714</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1711549401714</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -493,7 +494,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test git hub action to deploy" />
     <MESSAGE value="test git hub action 8 to deploy" />
     <MESSAGE value="test git hub action 9 to deploy" />
     <MESSAGE value="test git hub action 20 to deploy" />
@@ -518,6 +518,7 @@
     <MESSAGE value="test url request to deploy" />
     <MESSAGE value="change dockerfile to install requirements and load data to deploy" />
     <MESSAGE value="delete ignore files to deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete ignore files to deploy" />
+    <MESSAGE value="add data folder to dockerfile to deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="add data folder to dockerfile to deploy" />
   </component>
 </project>
