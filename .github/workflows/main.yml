@@ -28,7 +28,7 @@ jobs:
         PROJECT_ID: pretadepenser
         APP_ID: credit-predict
         RUN_REGION: us-east1
-        SA_KEY_JSON: ${{ secrets.GCP_SA_KEY_JSON }}
+        #SA_KEY_JSON: ${{ secrets.GCP_SA_KEY_JSON }}
 
     # Build and push image to Google Container Registry
     - name: Build
