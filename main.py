@@ -8,8 +8,12 @@ app = Flask(__name__)
 def hello():
     return "flask api"
 
+@app.route('/test', methods=['GET'])
+def test():
+    return "/test"
+
 @app.route('/double', methods=['GET'])
-def multiple():
+def double():
     number = request.args.get("number")
     result = number * 2
     return str(result)
