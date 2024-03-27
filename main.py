@@ -56,18 +56,15 @@ def hello():
 def test():
     return "/test"
 
-@app.route('/double', methods=['GET'])
 @app.route('/double/', methods=['GET'])
 def double():
-    params = request.args.get("params")
+    number = request.args.get("number")
     try:
-        number = int(params)
+        number = int(number)
         result = number * 2
         return str(result)
     except ValueError:
         return "Invalid input: Please provide a valid number."
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
-
-# test github action
+    app.run(debug=False, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))

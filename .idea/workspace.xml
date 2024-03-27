@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="add data folder to dockerfile to deploy">
+    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="add install requirements to dockerfile to deploy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,14 +86,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
-    </task>
-    <task id="LOCAL-00014" summary="test git hub action 8 to deploy">
-      <option name="closed" value="true" />
-      <created>1711458071367</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1711458071367</updated>
     </task>
     <task id="LOCAL-00015" summary="test git hub action 9 to deploy">
       <option name="closed" value="true" />
@@ -479,7 +471,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711549401714</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="add install requirements to dockerfile to deploy">
+      <option name="closed" value="true" />
+      <created>1711552218004</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1711552218005</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -494,7 +494,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test git hub action 8 to deploy" />
     <MESSAGE value="test git hub action 9 to deploy" />
     <MESSAGE value="test git hub action 20 to deploy" />
     <MESSAGE value="test git hub action 21 to deploy" />
@@ -519,6 +518,7 @@
     <MESSAGE value="change dockerfile to install requirements and load data to deploy" />
     <MESSAGE value="delete ignore files to deploy" />
     <MESSAGE value="add data folder to dockerfile to deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="add data folder to dockerfile to deploy" />
+    <MESSAGE value="add install requirements to dockerfile to deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="add install requirements to dockerfile to deploy" />
   </component>
 </project>
