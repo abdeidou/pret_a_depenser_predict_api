@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="test git hub action to deploy 37">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
-    </list>
+    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="test git hub action to deploy 37" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -446,7 +444,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711531181402</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="test git hub action to deploy 37">
+      <option name="closed" value="true" />
+      <created>1711531771182</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1711531771182</updated>
+    </task>
+    <task id="LOCAL-00047" summary="test git hub action to deploy 37">
+      <option name="closed" value="true" />
+      <created>1711532008819</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1711532008819</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
