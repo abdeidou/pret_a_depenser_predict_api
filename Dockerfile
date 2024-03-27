@@ -10,6 +10,9 @@ ENV APP_HOME /app
 WORKDIR $APP_HOME
 COPY . ./
 
+# Copy data folder into the container image.
+COPY data /app/data
+
 # Install production dependencies.
 RUN pip install Flask gunicorn
 
