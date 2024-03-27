@@ -1,40 +1,38 @@
-name: GCS Deployment
+name: Continuous Deployment to Google Cloud Run
 
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the main branch
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "deploy"
   deploy:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    if: "contains(github.event.head_commit.message, 'to deploy')"
-    # Steps represent a sequence of tasks that will be executed as part of the job
+
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
-    # Setup gcloud CLI
-    - uses: google-github-actions/setup-gcloud@v0
-      with:
-        service_account_email: ${{ secrets.GCP_SA_EMAIL }}
-        service_account_key: ${{ secrets.GCP_SA_KEY }}
-        #project_id: pretadepenser
-        PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
-        APP_ID: ${{ secrets.GCP_APP_ID }}
-        RUN_REGION: us-east1
-        #SA_KEY_JSON: ${{ secrets.GCP_SA_KEY_JSON }}
+      - name: Set up Google Cloud SDK
+        uses: google-github-actions/setup-gcloud@v0
+        with:
+          service_account_email: ${{ secrets.GCP_SA_EMAIL }}
+          service_account_key: ${{ secrets.GCP_SA_KEY }}
+          project_id: ${{ secrets.GCP_PROJECT_ID }}
+          export_default_credentials: true
 
-    # Build and push image to Google Container Registry
-    - name: Build
-      run: gcloud builds submit --tag gcr.io/$PROJECT_ID/$APP_ID:$GITHUB_SHA
+      - name: Build and Push Docker Image
+        run: |
+          docker build -t gcr.io/${{ secrets.GCP_PROJECT_ID }}/credit-predict:${{ github.sha }} .
+          docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/credit-predict:${{ github.sha }}
 
-    - name: Deploy
-      run: gcloud run deploy $APP_ID --image gcr.io/$PROJECT_ID/$APP_ID:$GITHUB_SHA --platform managed --region $RUN_REGION --allow-unauthenticated
-# test gc
+      - name: Deploy to Google Cloud Run
+        run: |
+          gcloud run deploy your-service-name \
+            --image gcr.io/${{ secrets.GCP_PROJECT_ID }}/credit-predict:${{ github.sha }} \
+            --platform managed \
+            --region your-region \
+            --allow-unauthenticated
+
 
 
