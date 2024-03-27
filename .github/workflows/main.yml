@@ -31,10 +31,10 @@ jobs:
 
       - name: Deploy to Google Cloud Run
         run: |
-          gcloud run deploy your-service-name \
+          gcloud run deploy credit-predict \
             --image gcr.io/${{ secrets.GCP_PROJECT_ID }}/credit-predict:${{ github.sha }} \
-            --platform managed\
-            --region europe-west1\
+            --platform managed \
+            --region europe-west1 \
             --allow-unauthenticated
 
 
