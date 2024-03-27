@@ -19,11 +19,6 @@ COPY data /app/data
 # Copy the rest of your application code into the container at /app
 COPY . /app/
 
-# Define environment variable
-ENV FLASK_APP app.py
-
-# Make port 80 available to the world outside this container
-EXPOSE 80
-
-# Run app.py when the container launches
-CMD ["flask", "run", "--host=0.0.0.0", "--port=80"]
+# Install production dependencies.
+RUN pip install Flask gunicorn
+CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 main:app

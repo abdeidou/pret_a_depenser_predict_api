@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="test url request to deploy">
+    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="change dockerfile to install requirements and load data to deploy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,22 +86,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
-    </task>
-    <task id="LOCAL-00009" summary="test git hub action">
-      <option name="closed" value="true" />
-      <created>1711454836477</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1711454836478</updated>
-    </task>
-    <task id="LOCAL-00010" summary="test git hub action">
-      <option name="closed" value="true" />
-      <created>1711454998792</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1711454998792</updated>
     </task>
     <task id="LOCAL-00011" summary="test git hub action">
       <option name="closed" value="true" />
@@ -479,7 +463,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711543512333</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="test url request to deploy">
+      <option name="closed" value="true" />
+      <created>1711543937652</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1711543937654</updated>
+    </task>
+    <task id="LOCAL-00059" summary="change dockerfile to install requirements and load data to deploy">
+      <option name="closed" value="true" />
+      <created>1711544781891</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1711544781891</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -494,7 +494,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test git hub action" />
     <MESSAGE value="test git hub action 6" />
     <MESSAGE value="test git hub action to deploy" />
     <MESSAGE value="test git hub action 8 to deploy" />
@@ -519,6 +518,7 @@
     <MESSAGE value="test git hub action to deploy 37" />
     <MESSAGE value="test request to deploy" />
     <MESSAGE value="test url request to deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="test url request to deploy" />
+    <MESSAGE value="change dockerfile to install requirements and load data to deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="change dockerfile to install requirements and load data to deploy" />
   </component>
 </project>
