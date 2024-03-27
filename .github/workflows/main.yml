@@ -36,6 +36,6 @@ jobs:
 
     - name: Deploy
       run: gcloud run deploy $APP_ID --image gcr.io/$PROJECT_ID/$APP_ID:$GITHUB_SHA --platform managed --region $RUN_REGION --allow-unauthenticated
-# test gc
+# test
 
 
