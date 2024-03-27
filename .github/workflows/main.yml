@@ -34,7 +34,7 @@ jobs:
           gcloud run deploy your-service-name \
             --image gcr.io/${{ secrets.GCP_PROJECT_ID }}/credit-predict:${{ github.sha }} \
             --platform managed\
-            --region us-est1\
+            --region europe-west1\
             --allow-unauthenticated
 
 
