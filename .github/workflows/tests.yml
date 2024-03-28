@@ -11,6 +11,7 @@ jobs:
   run-tests:
     runs-on: ubuntu-latest
 
+    # Définit une stratégie de matrice pour exécuter les tests avec différentes versions de Python
     strategy:
       matrix:
         python-version:
@@ -19,31 +20,40 @@ jobs:
           - "3.12"
 
     steps:
+      # Récupérer le code source
       - name: Checkout code
         uses: actions/checkout@v3
 
+      # Configuration de Python avec la version spécifiée dans la matrice
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
           architecture: x64
 
+      # Installation des dépendances
       - name: Install dependencies
+        # Condition : exécute uniquement si le cache n'a pas été utilisé
+        # echo "::set-output name=cache-hit::false":
+        # Définit une sortie pour indiquer que le cache n'a pas été utilisé
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          echo "::set-output name=cache-hit::false"
+          echo "::set-output name=cache-hit::false" 
 
+      # Mise en cache des dépendances
       - name: Cache dependencies
         id: cache
         uses: actions/cache@v2
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          # Clés de restauration pour la récupération du cache
           restore-keys: |
             ${{ runner.os }}-pip-
 
+      # Exécution des tests
       - name: Run tests
         run: |
           python -m pytest

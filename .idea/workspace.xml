@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="test workflows">
+    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="test pytest workflow">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,22 +86,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
-    </task>
-    <task id="LOCAL-00044" summary="test git hub action to deploy 37">
-      <option name="closed" value="true" />
-      <created>1711530612220</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1711530612221</updated>
-    </task>
-    <task id="LOCAL-00045" summary="test git hub action to deploy 37">
-      <option name="closed" value="true" />
-      <created>1711531181402</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1711531181402</updated>
     </task>
     <task id="LOCAL-00046" summary="test git hub action to deploy 37">
       <option name="closed" value="true" />
@@ -478,7 +463,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711631449504</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="test pytest workflow">
+      <option name="closed" value="true" />
+      <created>1711636618371</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1711636618372</updated>
+    </task>
+    <task id="LOCAL-00094" summary="test pytest workflow">
+      <option name="closed" value="true" />
+      <created>1711636697340</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1711636697341</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -493,7 +494,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test git hub action to deploy 37" />
     <MESSAGE value="test request to deploy" />
     <MESSAGE value="test url request to deploy" />
     <MESSAGE value="change dockerfile to install requirements and load data to deploy" />
@@ -518,6 +518,7 @@
     <MESSAGE value="modif test_api undo case redirect to deploy" />
     <MESSAGE value="modif test_api" />
     <MESSAGE value="test workflows" />
-    <option name="LAST_COMMIT_MESSAGE" value="test workflows" />
+    <MESSAGE value="test pytest workflow" />
+    <option name="LAST_COMMIT_MESSAGE" value="test pytest workflow" />
   </component>
 </project>
