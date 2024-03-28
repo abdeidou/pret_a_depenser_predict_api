@@ -13,7 +13,6 @@ COPY . ./
 
 RUN pip install -r requirements.txt
 # Install production dependencies.
-RUN pip install Flask gunicorn
 
 # Run the web service on container startup. Here we use the gunicorn
 # webserver, with one worker process and 8 threads.
