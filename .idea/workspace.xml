@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="add comments to deploy" />
+    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="test cloud service to deploy">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_api.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,22 +86,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
-    </task>
-    <task id="LOCAL-00047" summary="test git hub action to deploy 37">
-      <option name="closed" value="true" />
-      <created>1711532008819</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1711532008819</updated>
-    </task>
-    <task id="LOCAL-00048" summary="test git hub action to deploy 37">
-      <option name="closed" value="true" />
-      <created>1711532148645</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1711532148646</updated>
     </task>
     <task id="LOCAL-00049" summary="test git hub action to deploy 37">
       <option name="closed" value="true" />
@@ -476,7 +463,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711637306123</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="test cloud service to deploy">
+      <option name="closed" value="true" />
+      <created>1711637906092</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1711637906092</updated>
+    </task>
+    <task id="LOCAL-00097" summary="test cloud service to deploy">
+      <option name="closed" value="true" />
+      <created>1711638995083</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1711638995084</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -491,7 +494,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test url request to deploy" />
     <MESSAGE value="change dockerfile to install requirements and load data to deploy" />
     <MESSAGE value="delete ignore files to deploy" />
     <MESSAGE value="add data folder to dockerfile to deploy" />
@@ -516,6 +518,7 @@
     <MESSAGE value="test workflows" />
     <MESSAGE value="test pytest workflow" />
     <MESSAGE value="add comments to deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="add comments to deploy" />
+    <MESSAGE value="test cloud service to deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="test cloud service to deploy" />
   </component>
 </project>
