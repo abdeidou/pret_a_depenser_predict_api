@@ -32,7 +32,7 @@ def expected_customer_predict(customer_id):
 # Fonction test de customer_data
 def test_customer_data_api(client, customer_id, expected_customer_data):
     # Faire une requête à l'API
-    with client.get(f"/customer_data", query_string={"customer_id": customer_id}) as response:
+    with client.get(f"/customer_data", query_string={"customer_id": int(customer_id)}) as response:
         # Vérifier le statut de la réponse
         assert response.status_code == 200
         # Vérifier la réponse
@@ -42,7 +42,7 @@ def test_customer_data_api(client, customer_id, expected_customer_data):
 # Fonction test de predict
 def test_predict_api(client, customer_id, expected_customer_predict):
     # Faire une requête à l'API
-    with client.get(f"/predict", query_string={"customer_id": customer_id}) as response:
+    with client.get(f"/predict", query_string={"customer_id": int(customer_id)}) as response:
         # Vérifier le statut de la réponse
         assert response.status_code == 200
         # Vérifier la réponse
