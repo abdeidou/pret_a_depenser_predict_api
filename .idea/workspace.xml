@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="add gunicorn to requirements to deploy">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="add gunicorn to dockerfile and requirements and delete app.run to deploy">
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,22 +85,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
-    </task>
-    <task id="LOCAL-00018" summary="test git hub action 22 to deploy">
-      <option name="closed" value="true" />
-      <created>1711460501868</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1711460501868</updated>
-    </task>
-    <task id="LOCAL-00019" summary="test git hub action 23 to deploy">
-      <option name="closed" value="true" />
-      <created>1711460790154</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1711460790154</updated>
     </task>
     <task id="LOCAL-00020" summary="test git hub action 24 to deploy">
       <option name="closed" value="true" />
@@ -480,7 +462,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711617288583</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="delete gunicorn from dockerfile and requirements to deploy">
+      <option name="closed" value="true" />
+      <created>1711617969882</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1711617969882</updated>
+    </task>
+    <task id="LOCAL-00068" summary="add gunicorn to dockerfile and requirements and delete app.run to deploy">
+      <option name="closed" value="true" />
+      <created>1711618191866</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1711618191866</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -495,8 +493,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test git hub action 22 to deploy" />
-    <MESSAGE value="test git hub action 23 to deploy" />
     <MESSAGE value="test git hub action 24 to deploy" />
     <MESSAGE value="test git hub action 25 to deploy" />
     <MESSAGE value="test git hub action 26 to deploy" />
@@ -520,6 +516,8 @@
     <MESSAGE value="debug to false to deploy" />
     <MESSAGE value="modif requirements to deploy" />
     <MESSAGE value="add gunicorn to requirements to deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="add gunicorn to requirements to deploy" />
+    <MESSAGE value="delete gunicorn from dockerfile and requirements to deploy" />
+    <MESSAGE value="add gunicorn to dockerfile and requirements and delete app.run to deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="add gunicorn to dockerfile and requirements and delete app.run to deploy" />
   </component>
 </project>

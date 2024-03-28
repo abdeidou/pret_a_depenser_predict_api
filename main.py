@@ -66,5 +66,5 @@ def double():
     except ValueError:
         return "Invalid input: Please provide a valid number."
 
-#if __name__ == "__main__":
-#    app.run(debug=False, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
+if __name__ == "__main__":
+    app.run(debug=False, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
