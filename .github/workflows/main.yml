@@ -26,13 +26,13 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t gcr.io/${{ secrets.GCP_PROJECT_ID }}/${{ secrets.GCP_APP_ID }}:${{ github.sha }} .
-          docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/${{ secrets.GCP_APP_ID }}:${{ github.sha }}
+          docker build -t gcr.io/${{ secrets.GCP_PROJECT_ID }}/credit-predict:${{ github.sha }} .
+          docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/credit-predict:${{ github.sha }}
 
       - name: Deploy to Google Cloud Run
         run: |
-          gcloud run deploy ${{ secrets.GCP_APP_ID }} \
-            --image gcr.io/${{ secrets.GCP_PROJECT_ID }}/${{ secrets.GCP_APP_ID }}:${{ github.sha }} \
+          gcloud run deploy credit-predict \
+            --image gcr.io/${{ secrets.GCP_PROJECT_ID }}/credit-predict:${{ github.sha }} \
             --platform managed \
             --region europe-west1 \
             --allow-unauthenticated
