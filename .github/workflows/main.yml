@@ -19,6 +19,8 @@ jobs:
         with:
           service_account_email: ${{ secrets.GCP_SA_EMAIL }}
           service_account_key: ${{ secrets.GCP_SA_KEY }}
+          project_id: ${{ secrets.GCP_PROJECT_ID }}
+          app_id: ${{ secrets.GCP_APP_ID }}
           export_default_credentials: true
 
       - name: Authenticate Docker to GCR
