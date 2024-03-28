@@ -1,4 +1,4 @@
 flask
 lightgbm
 scikit-learn
-gunicorn
+#gunicorn
