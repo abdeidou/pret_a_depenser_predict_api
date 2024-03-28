@@ -1,6 +1,7 @@
-# deploy
+# Déploiement continu vers Google Cloud Run
 name: Continuous Deployment to Google Cloud Run
 
+# Déclenche le workflow lorsqu'un push est effectué sur la branche main
 on:
   push:
     branches:
@@ -8,28 +9,39 @@ on:
 
 jobs:
   deploy:
+    # Utilise une machine Ubuntu pour exécuter les étapes du workflow
     runs-on: ubuntu-latest
 
     steps:
+      # Vérification du dépôt
       - name: Checkout Repository
         uses: actions/checkout@v2
 
+      # Configuration du SDK Google Cloud
       - name: Set up Google Cloud SDK
         uses: google-github-actions/setup-gcloud@v0
         with:
+          # Informations d'identification du compte de service pour accéder à Google Cloud
           service_account_email: ${{ secrets.GCP_SA_EMAIL }}
           service_account_key: ${{ secrets.GCP_SA_KEY }}
+          # ID du projet Google Cloud
           project_id: ${{ secrets.GCP_PROJECT_ID }}
 
+      # Authentification Docker auprès du registre GCR
       - name: Authenticate Docker to GCR
         run: gcloud auth configure-docker
 
+      # Construction et publication de l'image Docker
       - name: Build and Push Docker Image
+        # Construction de l'image Docker
+        # Publication de l'image Docker dans le registre GCR
         run: |
           docker build -t gcr.io/${{ secrets.GCP_PROJECT_ID }}/credit-predict:${{ github.sha }} .
           docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/credit-predict:${{ github.sha }}
 
+      # Déploiement vers Google Cloud Run
       - name: Deploy to Google Cloud Run
+        # Déploiement de l'application vers Cloud Run
         run: |
           gcloud run deploy credit-predict \
             --image gcr.io/${{ secrets.GCP_PROJECT_ID }}/credit-predict:${{ github.sha }} \
