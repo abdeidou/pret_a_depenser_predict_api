@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="change python version to deploy">
+    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="set using python version comment to deploy">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,14 +86,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
-    </task>
-    <task id="LOCAL-00024" summary="test git hub action 28 to deploy">
-      <option name="closed" value="true" />
-      <created>1711464694227</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1711464694228</updated>
     </task>
     <task id="LOCAL-00025" summary="test git hub action 28 to deploy">
       <option name="closed" value="true" />
@@ -479,7 +471,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711620216606</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="set using python version comment to deploy">
+      <option name="closed" value="true" />
+      <created>1711621576906</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1711621576908</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -494,7 +494,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test git hub action 28 to deploy" />
     <MESSAGE value="test git hub action 29 to deploy" />
     <MESSAGE value="test git hub action 30 to deploy" />
     <MESSAGE value="test git hub action 31 to deploy" />
@@ -519,6 +518,7 @@
     <MESSAGE value="specify pandas version to deploy" />
     <MESSAGE value="specify packages version in requirements file to deploy" />
     <MESSAGE value="change python version to deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="change python version to deploy" />
+    <MESSAGE value="set using python version comment to deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="set using python version comment to deploy" />
   </component>
 </project>
