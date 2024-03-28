@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="modif dockerfile to deploy">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="specify pandas version to deploy">
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,14 +85,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
-    </task>
-    <task id="LOCAL-00021" summary="test git hub action 25 to deploy">
-      <option name="closed" value="true" />
-      <created>1711461282603</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1711461282603</updated>
     </task>
     <task id="LOCAL-00022" summary="test git hub action 26 to deploy">
       <option name="closed" value="true" />
@@ -479,7 +470,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711618709261</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="specify pandas version to deploy">
+      <option name="closed" value="true" />
+      <created>1711619100524</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1711619100524</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -494,7 +493,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test git hub action 25 to deploy" />
     <MESSAGE value="test git hub action 26 to deploy" />
     <MESSAGE value="test git hub action 27 to deploy" />
     <MESSAGE value="test git hub action 28 to deploy" />
@@ -519,6 +517,7 @@
     <MESSAGE value="delete gunicorn from dockerfile and requirements to deploy" />
     <MESSAGE value="add gunicorn to dockerfile and requirements and delete app.run to deploy" />
     <MESSAGE value="modif dockerfile to deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="modif dockerfile to deploy" />
+    <MESSAGE value="specify pandas version to deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="specify pandas version to deploy" />
   </component>
 </project>
