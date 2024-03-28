@@ -27,13 +27,13 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t gcr.io/$project_id/$app_id:${{ github.sha }} .
-          docker push gcr.io/$project_id/$app_id:${{ github.sha }}
+          docker build -t gcr.io/project_id/app_id:${{ github.sha }} .
+          docker push gcr.io/project_id/app_id:${{ github.sha }}
 
       - name: Deploy to Google Cloud Run
         run: |
-          gcloud run deploy $app_id \
-            --image gcr.io/$project_id/$app_id:${{ github.sha }} \
+          gcloud run deploy app_id \
+            --image gcr.io/project_id/app_id:${{ github.sha }} \
             --platform managed \
             --region europe-west1 \
             --allow-unauthenticated
