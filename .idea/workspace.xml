@@ -87,22 +87,6 @@
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
     </task>
-    <task id="LOCAL-00049" summary="test git hub action to deploy 37">
-      <option name="closed" value="true" />
-      <created>1711532388204</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1711532388204</updated>
-    </task>
-    <task id="LOCAL-00050" summary="test git hub action to deploy 37">
-      <option name="closed" value="true" />
-      <created>1711532576155</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1711532576162</updated>
-    </task>
     <task id="LOCAL-00051" summary="test git hub action to deploy 37">
       <option name="closed" value="true" />
       <created>1711532936005</created>
@@ -479,7 +463,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711638995084</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="test cloud service to deploy">
+      <option name="closed" value="true" />
+      <created>1711639522154</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1711639522156</updated>
+    </task>
+    <task id="LOCAL-00099" summary="test cloud service to deploy">
+      <option name="closed" value="true" />
+      <created>1711641529193</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1711641529193</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
