@@ -22,8 +22,8 @@ jobs:
         uses: google-github-actions/setup-gcloud@v0
         with:
           # Informations d'identification du compte de service pour accéder à Google Cloud
-          service_account_email: ${{ secrets.GCP_SA_EMAIL }}
-          service_account_key: ${{ secrets.GCP_SA_KEY }}
+          # service_account_email: ${{ secrets.GCP_SA_EMAIL }}
+          # service_account_key: ${{ secrets.GCP_SA_KEY }}
           # ID du projet Google Cloud
           project_id: ${{ secrets.GCP_PROJECT_ID }}
 
