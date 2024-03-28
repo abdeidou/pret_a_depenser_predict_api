@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="config service deployment to deploy" />
+    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="config service deployment to deploy">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,22 +85,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
-    </task>
-    <task id="LOCAL-00056" summary="test url request to deploy">
-      <option name="closed" value="true" />
-      <created>1711542853079</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1711542853080</updated>
-    </task>
-    <task id="LOCAL-00057" summary="test url request to deploy">
-      <option name="closed" value="true" />
-      <created>1711543512329</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1711543512333</updated>
     </task>
     <task id="LOCAL-00058" summary="test url request to deploy">
       <option name="closed" value="true" />
@@ -476,7 +462,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711644660862</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="config service deployment to deploy">
+      <option name="closed" value="true" />
+      <created>1711644670661</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1711644670662</updated>
+    </task>
+    <task id="LOCAL-00106" summary="config service deployment to deploy">
+      <option name="closed" value="true" />
+      <created>1711645050018</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1711645050018</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
