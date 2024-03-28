@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="test pytest workflow">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-    </list>
+    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="add comments to deploy" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,14 +83,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
-    </task>
-    <task id="LOCAL-00046" summary="test git hub action to deploy 37">
-      <option name="closed" value="true" />
-      <created>1711531771182</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1711531771182</updated>
     </task>
     <task id="LOCAL-00047" summary="test git hub action to deploy 37">
       <option name="closed" value="true" />
@@ -479,7 +468,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711636697341</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="add comments to deploy">
+      <option name="closed" value="true" />
+      <created>1711637306123</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1711637306123</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -494,7 +491,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test request to deploy" />
     <MESSAGE value="test url request to deploy" />
     <MESSAGE value="change dockerfile to install requirements and load data to deploy" />
     <MESSAGE value="delete ignore files to deploy" />
@@ -519,6 +515,7 @@
     <MESSAGE value="modif test_api" />
     <MESSAGE value="test workflows" />
     <MESSAGE value="test pytest workflow" />
-    <option name="LAST_COMMIT_MESSAGE" value="test pytest workflow" />
+    <MESSAGE value="add comments to deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="add comments to deploy" />
   </component>
 </project>
