@@ -1,4 +1,4 @@
-# Use the official lightweight Python image for Python 3.9.
+# Use the official lightweight Python image for Python 3.12
 FROM python:3.12
 
 # Allow statements and log messages to immediately appear in the Knative logs
