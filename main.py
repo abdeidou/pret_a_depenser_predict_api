@@ -50,21 +50,7 @@ def threshold():
 
 @app.route("/")
 def hello():
-    return "flask api"
-
-@app.route('/test', methods=['GET'])
-def test():
-    return "/test"
-
-@app.route('/double/', methods=['GET'])
-def double():
-    number = request.args.get("number")
-    try:
-        number = int(number)
-        result = number * 2
-        return str(result)
-    except ValueError:
-        return "Invalid input: Please provide a valid number."
+    return "flask api running"
 
 if __name__ == "__main__":
     app.run(debug=False, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
