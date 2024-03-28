@@ -1,4 +1,5 @@
 flask
 lightgbm
 scikit-learn
+pandas==1.3.3
 gunicorn
