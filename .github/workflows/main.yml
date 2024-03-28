@@ -33,7 +33,7 @@ jobs:
 
       - name: Deploy to Google Cloud Run
         run: |
-          gcloud run deploy app_id \
+          gcloud run deploy $app_id \
             --image gcr.io/${{ secrets.GCP_PROJECT_ID }}/${{ secrets.GCP_APP_ID }}:${{ github.sha }} \
             --platform managed \
             --region europe-west1 \
