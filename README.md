@@ -1,4 +1,4 @@
-# credit_api
+# pret_a_depenser_predict_api
 
 Une API de “scoring crédit” pour prédir d'accorder ou réfuser un crédit à un client en utilisant un classifieur LigntGBM optimisé 
 et s'appuyant sur des sources de données test variées (données comportementales, données provenant d'autres institutions financières, etc.)
