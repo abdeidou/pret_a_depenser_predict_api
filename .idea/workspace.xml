@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="correct and test test_api" />
+    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="test_api corrections done to deploy">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,14 +89,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
-    </task>
-    <task id="LOCAL-00065" summary="modif requirements to deploy">
-      <option name="closed" value="true" />
-      <created>1711616240873</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1711616240873</updated>
     </task>
     <task id="LOCAL-00066" summary="add gunicorn to requirements to deploy">
       <option name="closed" value="true" />
@@ -480,7 +474,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711792911174</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="test_api corrections done to deploy">
+      <option name="closed" value="true" />
+      <created>1711793021769</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1711793021769</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -495,7 +497,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="debug to false to deploy" />
     <MESSAGE value="modif requirements to deploy" />
     <MESSAGE value="add gunicorn to requirements to deploy" />
     <MESSAGE value="delete gunicorn from dockerfile and requirements to deploy" />
@@ -520,6 +521,7 @@
     <MESSAGE value="test deployment to deploy" />
     <MESSAGE value="change prob class display to deploy" />
     <MESSAGE value="correct and test test_api" />
-    <option name="LAST_COMMIT_MESSAGE" value="correct and test test_api" />
+    <MESSAGE value="test_api corrections done to deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="test_api corrections done to deploy" />
   </component>
 </project>
