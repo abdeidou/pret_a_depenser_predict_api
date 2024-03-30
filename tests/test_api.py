@@ -1,6 +1,6 @@
 import pytest
 import json
-from main import customers_data, customers_data_ohe, lgbm
+from main import customers_data, customers_data_ohe, lgbm, threshold_opt
 from main import app
 
 # Les fixtures pour la configuration
@@ -25,7 +25,14 @@ def expected_customer_data(customer_id):
 def expected_customer_predict(customer_id):
     customer_row = customers_data[customers_data['SK_ID_CURR'] == str(customer_id)]
     customer_row_ohe = customers_data_ohe.iloc[customer_row.index].drop(columns=['SK_ID_CURR'], axis=1)
-    return lgbm.predict_proba(customer_row_ohe).tolist()
+    predictions = lgbm.predict_proba(customer_row_ohe)
+    probability_positive_class = predictions[:, 1]
+    if threshold_opt < probability_positive_class:
+        decision = "no"
+    else:
+        decision = "yes"
+    expected_response = {'positive_predict': probability_positive_class.tolist(), 'decision': decision}
+    return expected_response
 
 # Les fonctions de test
 

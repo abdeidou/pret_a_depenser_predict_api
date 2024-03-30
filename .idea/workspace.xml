@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="test deployment to deploy">
+    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="change prob class display to deploy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,14 +90,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
-    </task>
-    <task id="LOCAL-00062" summary="add data folder to dockerfile to deploy">
-      <option name="closed" value="true" />
-      <created>1711549401714</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1711549401714</updated>
     </task>
     <task id="LOCAL-00063" summary="add install requirements to dockerfile to deploy">
       <option name="closed" value="true" />
@@ -483,7 +475,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711787064358</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="change prob class display to deploy">
+      <option name="closed" value="true" />
+      <created>1711791048914</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1711791048915</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -498,7 +498,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add data folder to dockerfile to deploy" />
     <MESSAGE value="add install requirements to dockerfile to deploy" />
     <MESSAGE value="debug to false to deploy" />
     <MESSAGE value="modif requirements to deploy" />
@@ -523,6 +522,7 @@
     <MESSAGE value="test cloud service to deploy" />
     <MESSAGE value="config service deployment to deploy" />
     <MESSAGE value="test deployment to deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="test deployment to deploy" />
+    <MESSAGE value="change prob class display to deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="change prob class display to deploy" />
   </component>
 </project>
