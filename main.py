@@ -39,17 +39,18 @@ def predict():
     customer_row = customers_data[customers_data['SK_ID_CURR'] == str(customer_id)]
     if not customer_row.empty:
         customer_row_ohe = customers_data_ohe.iloc[customer_row.index].drop(columns=['SK_ID_CURR'], axis=1)
-        predictions = lgbm.predict_proba(customer_row_ohe).tolist()
-        response = {'customer_predict': predictions}
+        predictions = lgbm.predict_proba(customer_row_ohe)
+        probability_positive_class = predictions[:, 1]
+        if threshold_opt < probability_positive_class:
+            decision = "no"
+        else:
+            decision = "yes"
+        response = {'positive_predict': probability_positive_class.tolist(),
+                    'decision': decision}
         return json.dumps(response)
 
-# Fonction réponse à la requête threshold
-@app.route('/threshold')
-def threshold():
-    return str(threshold_opt)
-
 @app.route("/")
-def hello():
+def welkome():
     return "flask api running"
 
 if __name__ == "__main__":
