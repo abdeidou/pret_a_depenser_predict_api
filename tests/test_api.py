@@ -28,9 +28,9 @@ def expected_customer_predict(customer_id):
     predictions = lgbm.predict_proba(customer_row_ohe)
     probability_positive_class = predictions[:, 1]
     if threshold_opt < probability_positive_class:
-        decision = "no"
+        decision = "refuse"
     else:
-        decision = "yes"
+        decision = "accepte"
     expected_response = {'positive_predict': probability_positive_class.tolist(), 'decision': decision}
     return expected_response
 
