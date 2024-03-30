@@ -42,11 +42,11 @@ def predict():
         predictions = lgbm.predict_proba(customer_row_ohe)
         probability_positive_class = predictions[:, 1]
         if threshold_opt < probability_positive_class:
-            decision = "refuse"
+            classe = "refuse"
         else:
-            decision = "accepte"
+            classe = "accepte"
         response = {'positive_predict': probability_positive_class.tolist(),
-                    'class': decision}
+                    'classe': classe}
         return json.dumps(response)
 
 @app.route("/")
