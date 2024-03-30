@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="change prob class display to deploy">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_api.py" afterDir="false" />
-    </list>
+    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="correct and test test_api" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,22 +87,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
-    </task>
-    <task id="LOCAL-00063" summary="add install requirements to dockerfile to deploy">
-      <option name="closed" value="true" />
-      <created>1711552218004</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1711552218005</updated>
-    </task>
-    <task id="LOCAL-00064" summary="debug to false to deploy">
-      <option name="closed" value="true" />
-      <created>1711552682374</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1711552682374</updated>
     </task>
     <task id="LOCAL-00065" summary="modif requirements to deploy">
       <option name="closed" value="true" />
@@ -483,7 +464,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711791048915</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="correct and test test_api">
+      <option name="closed" value="true" />
+      <created>1711792709428</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1711792709429</updated>
+    </task>
+    <task id="LOCAL-00113" summary="correct and test test_api">
+      <option name="closed" value="true" />
+      <created>1711792911174</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1711792911174</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -498,7 +495,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add install requirements to dockerfile to deploy" />
     <MESSAGE value="debug to false to deploy" />
     <MESSAGE value="modif requirements to deploy" />
     <MESSAGE value="add gunicorn to requirements to deploy" />
@@ -523,6 +519,7 @@
     <MESSAGE value="config service deployment to deploy" />
     <MESSAGE value="test deployment to deploy" />
     <MESSAGE value="change prob class display to deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="change prob class display to deploy" />
+    <MESSAGE value="correct and test test_api" />
+    <option name="LAST_COMMIT_MESSAGE" value="correct and test test_api" />
   </component>
 </project>
