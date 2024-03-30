@@ -46,7 +46,7 @@ def predict():
         else:
             decision = "accepte"
         response = {'positive_predict': probability_positive_class.tolist(),
-                    'decision': decision}
+                    'class': decision}
         return json.dumps(response)
 
 @app.route("/")
