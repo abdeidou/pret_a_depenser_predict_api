@@ -46,7 +46,7 @@ tests:
   
 requirements.txt: liste des packages requis pour le projet
 
-.dockerignore, .gcloudignore, .igitignore: les composants à exclure
+.dockerignore, .gcloudignore, .igitignore: les composants à ignorer
 
 ## Utilisation
 
