@@ -26,12 +26,12 @@ def expected_customer_predict(customer_id):
     customer_row = customers_data[customers_data['SK_ID_CURR'] == str(customer_id)]
     customer_row_ohe = customers_data_ohe.iloc[customer_row.index].drop(columns=['SK_ID_CURR'], axis=1)
     predictions = lgbm.predict_proba(customer_row_ohe)
-    probability_positive_class = predictions[:, 1]
-    if threshold_opt < probability_positive_class:
+    probability_negative_class = predictions[:, 1]
+    if threshold_opt < probability_negative_class:
         classe = "refuse"
     else:
         classe = "accepte"
-    expected_response = {'positive_predict': probability_positive_class.tolist(), 'classe': classe}
+    expected_response = {'positive_predict': probability_negative_class.tolist(), 'classe': classe}
     return expected_response
 
 # Les fonctions de test

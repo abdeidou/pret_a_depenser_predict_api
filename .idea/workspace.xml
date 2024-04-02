@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="modif decision class to deploy">
+    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="modif class to classe to deploy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,14 +91,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
-    </task>
-    <task id="LOCAL-00069" summary="modif dockerfile to deploy">
-      <option name="closed" value="true" />
-      <created>1711618709261</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1711618709261</updated>
     </task>
     <task id="LOCAL-00070" summary="specify pandas version to deploy">
       <option name="closed" value="true" />
@@ -482,7 +476,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711812974339</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="modif class to classe to deploy">
+      <option name="closed" value="true" />
+      <created>1711813575794</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1711813575794</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -497,7 +499,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="delete gunicorn from dockerfile and requirements to deploy" />
     <MESSAGE value="add gunicorn to dockerfile and requirements and delete app.run to deploy" />
     <MESSAGE value="modif dockerfile to deploy" />
     <MESSAGE value="specify pandas version to deploy" />
@@ -522,6 +523,7 @@
     <MESSAGE value="test_api corrections done to deploy" />
     <MESSAGE value="modif class accepte refuse to deploy" />
     <MESSAGE value="modif decision class to deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="modif decision class to deploy" />
+    <MESSAGE value="modif class to classe to deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="modif class to classe to deploy" />
   </component>
 </project>
