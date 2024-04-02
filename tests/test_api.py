@@ -31,7 +31,7 @@ def expected_customer_predict(customer_id):
         classe = "refuse"
     else:
         classe = "accepte"
-    expected_response = {'positive_predict': probability_negative_class.tolist(), 'classe': classe}
+    expected_response = {'negative_predict': probability_negative_class.tolist(), 'classe': classe}
     return expected_response
 
 # Les fonctions de test
