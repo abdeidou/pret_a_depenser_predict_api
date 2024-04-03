@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="modif class to classe to deploy">
+    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="modif positive to negative to deploy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/best_model.pickle" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,22 +91,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
-    </task>
-    <task id="LOCAL-00070" summary="specify pandas version to deploy">
-      <option name="closed" value="true" />
-      <created>1711619100524</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1711619100524</updated>
-    </task>
-    <task id="LOCAL-00071" summary="specify packages version in requirements file to deploy">
-      <option name="closed" value="true" />
-      <created>1711619331395</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1711619331395</updated>
     </task>
     <task id="LOCAL-00072" summary="change python version to deploy">
       <option name="closed" value="true" />
@@ -484,7 +468,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711813575794</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="modif positive to negative to deploy">
+      <option name="closed" value="true" />
+      <created>1712054694505</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1712054694506</updated>
+    </task>
+    <task id="LOCAL-00120" summary="modif positive to negative to deploy">
+      <option name="closed" value="true" />
+      <created>1712055138822</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1712055138822</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -499,7 +499,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add gunicorn to dockerfile and requirements and delete app.run to deploy" />
     <MESSAGE value="modif dockerfile to deploy" />
     <MESSAGE value="specify pandas version to deploy" />
     <MESSAGE value="specify packages version in requirements file to deploy" />
@@ -524,6 +523,7 @@
     <MESSAGE value="modif class accepte refuse to deploy" />
     <MESSAGE value="modif decision class to deploy" />
     <MESSAGE value="modif class to classe to deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="modif class to classe to deploy" />
+    <MESSAGE value="modif positive to negative to deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="modif positive to negative to deploy" />
   </component>
 </project>

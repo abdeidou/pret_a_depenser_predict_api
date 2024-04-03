@@ -18,9 +18,9 @@ data_test = pd.read_csv("./data/application_test.csv", dtype={'SK_ID_CURR': str}
 data_test_ohe = pd.read_csv("./data/application_test_ohe.csv", dtype={'SK_ID_CURR': str})
 customers_data = data_test
 customers_data_ohe = data_test_ohe
-model_path = "./data/best_model.pickle"
+model_path = "./data/selected_model.pickle"
 lgbm = load_model(model_path)
-threshold_opt = 0.3
+threshold_opt = 0.65
 
 # Fonction réponse à la requête customer_data
 #@app.route('/customer_data', methods=['GET'])
