@@ -24,7 +24,7 @@ data:
 
 -> application_test_ohe.csv: les données clients test traitées par One_Hot_Encoding (disponibilité des données pour le modèle)
   
--> best_model.pickle: le modèle optimisé LightGBM
+-> selected_model.pickle: le modèle optimisé LightGBM
 
 -> IDOUMOHMED_ABDELAAZIZ_2_notebook_modélisation_012024.ipynb: notebook de modélisation 
   
