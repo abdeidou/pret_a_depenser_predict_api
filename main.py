@@ -3,31 +3,39 @@ import json
 from flask import Flask, request
 import pickle
 import pandas as pd
+import shap
 
 # Créer une instance de l'application Flask
 app = Flask(__name__)
 
 # Fonction charger le modèle
-def load_model(file_path):
-    with open(file_path, 'rb') as f:
-        model = pickle.load(f)
-    return model
+#def load(file_path):
+#    with open(file_path, 'rb') as f:
+#        model = pickle.load(f)
+#    #f.close()
+#    return model
 
 # Lire les données CSV, charger le modèle et le seuil optimal
 data_test = pd.read_csv("./data/application_test.csv", dtype={'SK_ID_CURR': str})
 data_test_ohe = pd.read_csv("./data/application_test_ohe.csv", dtype={'SK_ID_CURR': str})
-customers_data = data_test
-customers_data_ohe = data_test_ohe
 model_path = "./data/selected_model.pickle"
-lgbm = load_model(model_path)
+lgbm = pickle.load(open(model_path, 'rb'))
+#load(model_path)
 threshold_opt = 0.65
+explainer = shap.Explainer(lgbm)
+#explainer = pickle.load(open('./data/selected_model_explainer.pickle', 'rb'))
+
+
+# Fonction réponse à la requête acceuil
+@app.route("/")
+def welkome():
+    return "flask api running"
 
 # Fonction réponse à la requête customer_data
-#@app.route('/customer_data', methods=['GET'])
 @app.route('/customer_data/', methods=['GET'])
 def customer_data():
     customer_id = request.args.get("customer_id")
-    customer_row = customers_data[customers_data['SK_ID_CURR'] == str(customer_id)]
+    customer_row = data_test[data_test['SK_ID_CURR'] == str(customer_id)]
     response = {'customer_data': customer_row.to_json()}
     return json.dumps(response)
 
@@ -36,9 +44,9 @@ def customer_data():
 @app.route('/predict')
 def predict():
     customer_id = request.args.get("customer_id")
-    customer_row = customers_data[customers_data['SK_ID_CURR'] == str(customer_id)]
+    customer_row = data_test[data_test['SK_ID_CURR'] == str(customer_id)]
     if not customer_row.empty:
-        customer_row_ohe = customers_data_ohe.iloc[customer_row.index].drop(columns=['SK_ID_CURR'], axis=1)
+        customer_row_ohe = data_test_ohe.iloc[customer_row.index].drop(columns=['SK_ID_CURR'], axis=1)
         predictions = lgbm.predict_proba(customer_row_ohe)
         probability_negative_class = predictions[:, 1]
         if threshold_opt < probability_negative_class:
@@ -49,9 +57,20 @@ def predict():
                     'classe': classe}
         return json.dumps(response)
 
-@app.route("/")
-def welkome():
-    return "flask api running"
+@app.route('/explaine/', methods=['GET'])
+@app.route('/explaine')
+def explaine():
+    customer_id = request.args.get("customer_id")
+    customer_row_ohe = data_test_ohe[data_test['SK_ID_CURR'] == str(customer_id)].drop(columns=['SK_ID_CURR'], axis=1)
+    customer_index = customer_row_ohe.index
+    if not customer_row_ohe.empty:
+        #customer_row_ohe = customers_data.iloc[customer_row.index].drop(columns=['SK_ID_CURR'], axis=1)
+        #.transpose()
+        #df_customer_row_ohe = pd.DataFrame(customer_row_ohe)
+        #df_customer_row_ohe = df_customer_row_ohe.astype(float)
+        shap_values = explainer.shap_values(customer_row_ohe)
+        response = {'features_name': customer_row_ohe.columns.tolist(), 'shap_values': shap_values.tolist()}
+        return json.dumps(response)
 
 if __name__ == "__main__":
     app.run(debug=False, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
