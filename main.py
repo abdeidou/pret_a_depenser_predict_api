@@ -8,19 +8,11 @@ import shap
 # Créer une instance de l'application Flask
 app = Flask(__name__)
 
-# Fonction charger le modèle
-#def load(file_path):
-#    with open(file_path, 'rb') as f:
-#        model = pickle.load(f)
-#    #f.close()
-#    return model
-
 # Lire les données CSV, charger le modèle et le seuil optimal
 data_test = pd.read_csv("./data/application_test.csv", dtype={'SK_ID_CURR': str})
 data_test_ohe = pd.read_csv("./data/application_test_ohe.csv", dtype={'SK_ID_CURR': str})
 model_path = "./data/selected_model.pickle"
 lgbm = pickle.load(open(model_path, 'rb'))
-#load(model_path)
 threshold_opt = 0.65
 explainer = shap.Explainer(lgbm)
 #explainer = pickle.load(open('./data/selected_model_explainer.pickle', 'rb'))
@@ -41,7 +33,6 @@ def customer_data():
 
 # Fonction réponse à la requête predict
 @app.route('/predict/', methods=['GET'])
-@app.route('/predict')
 def predict():
     customer_id = request.args.get("customer_id")
     customer_row = data_test[data_test['SK_ID_CURR'] == str(customer_id)]
@@ -57,9 +48,8 @@ def predict():
                     'classe': classe}
         return json.dumps(response)
 
-@app.route('/explaine/', methods=['GET'])
-@app.route('/explaine')
-def explaine():
+@app.route('/explain/', methods=['GET'])
+def explain():
     customer_id = request.args.get("customer_id")
     customer_row_ohe = data_test_ohe[data_test['SK_ID_CURR'] == str(customer_id)].drop(columns=['SK_ID_CURR'], axis=1)
     customer_index = customer_row_ohe.index
