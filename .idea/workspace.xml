@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="notebook modélisation finalisé">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pret_a_depenser_predict_service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pret_a_depenser_predict_service.iml" afterDir="false" />
+    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="add shap requirements to deploy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,22 +92,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
-    </task>
-    <task id="LOCAL-00076" summary="modif main gh actions to deploy">
-      <option name="closed" value="true" />
-      <created>1711623219464</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1711623219464</updated>
-    </task>
-    <task id="LOCAL-00077" summary="modif main gh actions to deploy">
-      <option name="closed" value="true" />
-      <created>1711623503207</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1711623503207</updated>
     </task>
     <task id="LOCAL-00078" summary="modif main gh actions to deploy">
       <option name="closed" value="true" />
@@ -487,7 +469,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712149111804</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="add explainer route to deploy">
+      <option name="closed" value="true" />
+      <created>1712426320590</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1712426320591</updated>
+    </task>
+    <task id="LOCAL-00126" summary="add shap requirements to deploy">
+      <option name="closed" value="true" />
+      <created>1712426552426</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1712426552427</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -502,8 +500,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="specify packages version in requirements file to deploy" />
-    <MESSAGE value="change python version to deploy" />
     <MESSAGE value="set using python version comment to deploy" />
     <MESSAGE value="modif main gh actions to deploy" />
     <MESSAGE value="add comments to main gh actions to deploy" />
@@ -527,6 +523,8 @@
     <MESSAGE value="modif positive to negative to deploy" />
     <MESSAGE value="add selected model to deploy" />
     <MESSAGE value="notebook modélisation finalisé" />
-    <option name="LAST_COMMIT_MESSAGE" value="notebook modélisation finalisé" />
+    <MESSAGE value="add explainer route to deploy" />
+    <MESSAGE value="add shap requirements to deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="add shap requirements to deploy" />
   </component>
 </project>
