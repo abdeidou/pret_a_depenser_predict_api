@@ -50,7 +50,6 @@ def predict():
 
 @app.route('/explain/', methods=['GET'])
 def explain():
-    shap_values_global = explainer.shap_values(data_test_ohe.drop(columns=['SK_ID_CURR'], axis=1))
     customer_id = request.args.get("customer_id")
     customer_row_ohe = data_test_ohe[data_test['SK_ID_CURR'] == str(customer_id)].drop(columns=['SK_ID_CURR'], axis=1)
     customer_index = customer_row_ohe.index
@@ -59,8 +58,15 @@ def explain():
         #df_customer_row_ohe = pd.DataFrame(customer_row_ohe)#.transpose()
         #df_customer_row_ohe = df_customer_row_ohe.astype(float)
         shap_values_local = explainer.shap_values(customer_row_ohe)
-        response = {'feature_names': customer_row_ohe.columns.tolist(), 'shap_values_global': shap_values_global.tolist(), 'shap_values_local': shap_values_local.tolist()}
+        response = {'feature_names': customer_row_ohe.columns.tolist(), 'shap_values_local': shap_values_local.tolist()}
         return json.dumps(response)
+
+@app.route('/explain_global')
+def explain_global():
+    X = data_test_ohe.drop(columns=['SK_ID_CURR'], axis=1)
+    shap_values_global = explainer.shap_values(X)
+    response = {'feature_names': X.columns.tolist(), 'shap_values_global': shap_values_global.tolist()}
+    return json.dumps(response)
 
 @app.route('/threshold')
 def threshold():
