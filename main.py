@@ -61,6 +61,7 @@ def explain():
         shap_values_local = explainer.shap_values(customer_row_ohe)
         response = {'feature_names': customer_row_ohe.columns.tolist(), 'shap_values_global': shap_values_global.tolist(), 'shap_values_local': shap_values_local.tolist()}
         return json.dumps(response)
+
 @app.route('/threshold')
 def threshold():
     response = {'threshold': threshold_opt}
