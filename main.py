@@ -58,8 +58,12 @@ def explain():
         #df_customer_row_ohe = pd.DataFrame(customer_row_ohe)#.transpose()
         #df_customer_row_ohe = df_customer_row_ohe.astype(float)
         shap_values = explainer.shap_values(customer_row_ohe)
-        response = {'features_name': customer_row_ohe.columns.tolist(), 'shap_values': shap_values.tolist()}
+        response = {'feature_names': customer_row_ohe.columns.tolist(), 'shap_values': shap_values.tolist()}
         return json.dumps(response)
+@app.route('/threshold')
+def threshold():
+    response = {'threshold': threshold_opt}
+    return json.dumps(response)
 
 if __name__ == "__main__":
     app.run(debug=False, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))

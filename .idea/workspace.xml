@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="add shap requirements to deploy">
+    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="correct main to deploy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,17 +42,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/aziz/PycharmProjects/pret_a_depenser_predict_api",
-    "settings.build.tools.auto.reload": "SELECTIVE",
-    "settings.editor.selected.configurable": "settings.sync"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/aziz/PycharmProjects/pret_a_depenser_predict_api&quot;,
+    &quot;settings.build.tools.auto.reload&quot;: &quot;SELECTIVE&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pret_a_depenser_predict_service" />
@@ -92,30 +92,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
-    </task>
-    <task id="LOCAL-00078" summary="modif main gh actions to deploy">
-      <option name="closed" value="true" />
-      <created>1711623820122</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1711623820122</updated>
-    </task>
-    <task id="LOCAL-00079" summary="modif main gh actions to deploy">
-      <option name="closed" value="true" />
-      <created>1711624003166</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1711624003166</updated>
-    </task>
-    <task id="LOCAL-00080" summary="modif main gh actions to deploy">
-      <option name="closed" value="true" />
-      <created>1711624679522</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1711624679522</updated>
     </task>
     <task id="LOCAL-00081" summary="modif main gh actions to deploy">
       <option name="closed" value="true" />
@@ -485,7 +461,31 @@
       <option name="project" value="LOCAL" />
       <updated>1712426552427</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="correct test_api">
+      <option name="closed" value="true" />
+      <created>1712426973665</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1712426973665</updated>
+    </task>
+    <task id="LOCAL-00128" summary="to deploy">
+      <option name="closed" value="true" />
+      <created>1712427111914</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1712427111914</updated>
+    </task>
+    <task id="LOCAL-00129" summary="correct main to deploy">
+      <option name="closed" value="true" />
+      <created>1712427492903</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1712427492903</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -500,9 +500,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="set using python version comment to deploy" />
-    <MESSAGE value="modif main gh actions to deploy" />
-    <MESSAGE value="add comments to main gh actions to deploy" />
     <MESSAGE value="add pytests to deploy" />
     <MESSAGE value="scikit-learn version to deploy" />
     <MESSAGE value="modif test_api with case redirect to deploy" />
@@ -525,6 +522,9 @@
     <MESSAGE value="notebook modélisation finalisé" />
     <MESSAGE value="add explainer route to deploy" />
     <MESSAGE value="add shap requirements to deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="add shap requirements to deploy" />
+    <MESSAGE value="correct test_api" />
+    <MESSAGE value="to deploy" />
+    <MESSAGE value="correct main to deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="correct main to deploy" />
   </component>
 </project>
