@@ -3,6 +3,7 @@ import json
 from flask import Flask, request
 import pickle
 import pandas as pd
+import numpy as np
 import shap
 
 # Créer une instance de l'application Flask
@@ -65,7 +66,12 @@ def explain():
 def explain_global():
     X = data_test_ohe.drop(columns=['SK_ID_CURR'], axis=1)
     shap_values_global = explainer.shap_values(X)
-    response = {'feature_names': X.columns.tolist(), 'shap_values_global': shap_values_global.tolist()}
+    feature_importance = np.abs(shap_values_global).mean(axis=0)
+    sorted_inds = np.argsort(feature_importance)
+    top_inds = sorted_inds[-10:]
+    top_feature_names = X.columns[top_inds].tolist()
+    top_shap_values_global = shap_values_global[top_inds].tolist()
+    response = {'top_feature_names': top_feature_names, 'top_shap_values_global': top_shap_values_global}
     return json.dumps(response)
 
 @app.route('/threshold')
