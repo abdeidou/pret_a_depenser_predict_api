@@ -82,8 +82,11 @@ def explain_global():
     buf = io.BytesIO()
     fig.savefig(buf, format='png')
     buf.seek(0)
-    # Renvoyer le graphique sous forme d'image
-    return send_file(buf, mimetype='image/png')
+    # Convertir le graphique en base64
+    graph_data = base64.b64encode(buf.read()).decode('utf-8')
+    # Créer la réponse JSON avec les données du graphique
+    response = {'shap_plot': graph_data}
+    return jsonify(response)
 
 
 @app.route('/threshold')
