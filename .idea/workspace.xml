@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="explain local global send png to deploy">
+    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="shap.summary_plot to deploy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,14 +92,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
-    </task>
-    <task id="LOCAL-00109" summary="config service deployment to deploy">
-      <option name="closed" value="true" />
-      <created>1711666911859</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1711666911859</updated>
     </task>
     <task id="LOCAL-00110" summary="test deployment to deploy">
       <option name="closed" value="true" />
@@ -484,7 +477,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713016727948</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <task id="LOCAL-00158" summary="shap.summary_plot to deploy">
+      <option name="closed" value="true" />
+      <created>1713017284823</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1713017284823</updated>
+    </task>
+    <option name="localTasksCounter" value="159" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -499,7 +500,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add shap requirements to deploy" />
     <MESSAGE value="correct test_api" />
     <MESSAGE value="correct main to deploy" />
     <MESSAGE value="add threshold route" />
@@ -524,6 +524,7 @@
     <MESSAGE value="response shap_plot to deploy" />
     <MESSAGE value="requirements matplotlib to deploy" />
     <MESSAGE value="explain local global send png to deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="explain local global send png to deploy" />
+    <MESSAGE value="shap.summary_plot to deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="shap.summary_plot to deploy" />
   </component>
 </project>
