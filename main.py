@@ -54,8 +54,7 @@ def predict():
 @app.route('/explain')
 def explain():
     shap_values = explainer.shap_values(X)
-    shap_values_json = json.dumps(shap_values.tolist())
-    compressed_shap_values = zlib.compress(shap_values_json.encode())
+    compressed_shap_values = zlib.compress(shap_values.tolist().encode())
     response = {'compressed_shap_values': compressed_shap_values}
     return json.dumps(response)
 @app.route('/explain_local/', methods=['GET'])
