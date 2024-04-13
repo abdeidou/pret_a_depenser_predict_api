@@ -59,8 +59,12 @@ def explain_local():
         #customer_row_ohe = customers_data.iloc[customer_row.index].drop(columns=['SK_ID_CURR'], axis=1)
         #df_customer_row_ohe = pd.DataFrame(customer_row_ohe)#.transpose()
         #df_customer_row_ohe = df_customer_row_ohe.astype(float)
+
+        #shap_values_local = explainer.shap_values(customer_row_ohe)
+        #response = {'feature_names': customer_row_ohe.columns.tolist(), 'shap_values_local': shap_values_local.tolist()}
+        #return json.dumps(response)
         shap_values_local = explainer.shap_values(customer_row_ohe)
-        response = {'feature_names': customer_row_ohe.columns.tolist(), 'shap_values_local': shap_values_local.tolist()}
+        response = {'shap_values_local': shap_values_local.tolist()}
         return json.dumps(response)
 
 @app.route('/explain_global')
