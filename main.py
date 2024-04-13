@@ -1,6 +1,6 @@
 import os
 import json
-from flask import Flask, request, send_file
+from flask import Flask, request, make_response
 import pickle
 import pandas as pd
 import numpy as np
@@ -51,17 +51,29 @@ def predict():
                     'classe': classe}
         return json.dumps(response)
 
+
 @app.route('/explain')
 def explain():
+    # Calculer les SHAP values
     shap_values = explainer.shap_values(X)
-    response = {'shap_values': shap_values.tolist()}
-    json_response = json.dumps(response)
-    compressed_json_response = zlib.compress(json_response.encode())
-    return send_file(compressed_json_response,
-                     mimetype='application/octet-stream',
-                     as_attachment=True,
-                     attachment_filename='compressed_json_response.json.gz',
-                     compress=True)
+
+    # Convertir les SHAP values en JSON
+    shap_values_json = json.dumps(shap_values.tolist())
+
+    # Compresser les données JSON avec zlib
+    compressed_data = zlib.compress(shap_values_json.encode())
+
+    # Créer une réponse HTTP
+    response = make_response(compressed_data)
+
+    # Définir le mimetype comme application/json
+    response.headers['Content-Type'] = 'application/json'
+
+    # Définir le nom de fichier et l'indicateur d'attachement
+    response.headers['Content-Disposition'] = 'attachment; filename=compressed_shap_values.json.gz'
+
+    return response
+
 @app.route('/explain_local/', methods=['GET'])
 def explain_local():
     customer_id = request.args.get("customer_id")
