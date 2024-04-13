@@ -73,28 +73,11 @@ def explain_local():
     response = {'shap_plot': graph_data}
     return jsonify(response)
 
-@app.route('/explain_local2/', methods=['GET'])
-def explain_local2():
-    customer_id = request.args.get("customer_id")
-    customer_row_ohe = data_test_ohe[data_test['SK_ID_CURR'] == str(customer_id)].drop(columns=['SK_ID_CURR'], axis=1)
-    customer_index = customer_row_ohe.index
-    if not customer_row_ohe.empty:
-        #customer_row_ohe = customers_data.iloc[customer_row.index].drop(columns=['SK_ID_CURR'], axis=1)
-        #df_customer_row_ohe = pd.DataFrame(customer_row_ohe)#.transpose()
-        #df_customer_row_ohe = df_customer_row_ohe.astype(float)
-
-        #shap_values_local = explainer.shap_values(customer_row_ohe)
-        #response = {'feature_names': customer_row_ohe.columns.tolist(), 'shap_values_local': shap_values_local.tolist()}
-        #return json.dumps(response)
-        shap_values_local = explainer.shap_values(customer_row_ohe)
-        feature_names = customer_row_ohe.columns.tolist()
-        response = {'shap_values_local': shap_values_local.tolist(), 'feature_names': feature_names}
-        return json.dumps(response)
-
 @app.route('/explain_global')
 def explain_global():
     # Créer le graphique SHAP beeswarm
-    fig = shap.plots.beeswarm(shap_values)
+    #fig = shap.plots.beeswarm(shap_values)
+    fig = shap.summary_plot(shap_values, X)
     # Enregistrer le graphique dans un buffer mémoire
     buf = io.BytesIO()
     fig.savefig(buf, format='png')
