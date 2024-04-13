@@ -94,7 +94,8 @@ def explain_local2():
 @app.route('/explain_global')
 def explain_global():
     # Créer le graphique SHAP
-    shap.plots.beeswarm(shap_values)
+    #shap.plots.beeswarm(shap_values)
+    shap.summary_plot(shap_values, X)
     # Enregistrer le graphique dans un buffer mémoire
     buf = io.BytesIO()
     plt.savefig(buf, format='png')
