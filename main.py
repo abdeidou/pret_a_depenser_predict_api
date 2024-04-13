@@ -1,6 +1,6 @@
 import os
 import json
-from flask import Flask, request, make_response
+from flask import Flask, request, send_file
 import pickle
 import pandas as pd
 import numpy as np
@@ -75,27 +75,14 @@ def explain_local():
 
 @app.route('/explain_global')
 def explain_global():
-    try:
-        # Créer le graphique SHAP beeswarm
-        fig = shap.plots.beeswarm(shap_values)
-
-        if fig:
-            # Enregistrer le graphique dans un buffer mémoire
-            buf = io.BytesIO()
-            fig.savefig(buf, format='png')
-            buf.seek(0)
-
-            # Convertir le graphique en base64
-            graph_data = base64.b64encode(buf.read()).decode('utf-8')
-
-            # Créer la réponse JSON avec les données du graphique
-            response = {'shap_plot': graph_data}
-
-            return jsonify(response)
-        else:
-            return jsonify({'error': 'Impossible de générer le graphique SHAP'})
-    except Exception as e:
-        return jsonify({'error': str(e)})
+    # Créer le graphique SHAP beeswarm
+    fig = shap.plots.beeswarm(shap_values)
+    # Enregistrer le graphique dans un buffer mémoire
+    buf = io.BytesIO()
+    fig.savefig(buf, format='png')
+    buf.seek(0)
+    # Renvoyer le graphique sous forme d'image
+    return send_file(buf, mimetype='image/png')
 
 
 @app.route('/threshold')
