@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="add explain_global route to deploy">
+    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="add top explain_global  to deploy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -92,14 +92,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
-    </task>
-    <task id="LOCAL-00088" summary="scikit-learn version to deploy">
-      <option name="closed" value="true" />
-      <created>1711630066477</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1711630066477</updated>
     </task>
     <task id="LOCAL-00089" summary="modif test_api with case redirect to deploy">
       <option name="closed" value="true" />
@@ -485,7 +477,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712928304004</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary="add top explain_global  to deploy">
+      <option name="closed" value="true" />
+      <created>1712945365391</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1712945365393</updated>
+    </task>
+    <option name="localTasksCounter" value="138" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -500,7 +500,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modif test_api" />
     <MESSAGE value="test workflows" />
     <MESSAGE value="test pytest workflow" />
     <MESSAGE value="add comments to deploy" />
@@ -525,6 +524,7 @@
     <MESSAGE value="to deploy" />
     <MESSAGE value="correct shap_values_global to deploy" />
     <MESSAGE value="add explain_global route to deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="add explain_global route to deploy" />
+    <MESSAGE value="add top explain_global  to deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="add top explain_global  to deploy" />
   </component>
 </project>

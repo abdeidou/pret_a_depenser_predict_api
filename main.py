@@ -15,7 +15,8 @@ data_test_ohe = pd.read_csv("./data/application_test_ohe.csv", dtype={'SK_ID_CUR
 model_path = "./data/selected_model.pickle"
 lgbm = pickle.load(open(model_path, 'rb'))
 threshold_opt = 0.65
-explainer = shap.Explainer(lgbm)
+X = data_test_ohe.drop(columns=['SK_ID_CURR'], axis=1)
+explainer = shap.Explainer(lgbm, X)
 #explainer = pickle.load(open('./data/selected_model_explainer.pickle', 'rb'))
 
 
@@ -49,8 +50,8 @@ def predict():
                     'classe': classe}
         return json.dumps(response)
 
-@app.route('/explain/', methods=['GET'])
-def explain():
+@app.route('/explain_local/', methods=['GET'])
+def explain_local():
     customer_id = request.args.get("customer_id")
     customer_row_ohe = data_test_ohe[data_test['SK_ID_CURR'] == str(customer_id)].drop(columns=['SK_ID_CURR'], axis=1)
     customer_index = customer_row_ohe.index
@@ -64,15 +65,23 @@ def explain():
 
 @app.route('/explain_global')
 def explain_global():
-    X = data_test_ohe.drop(columns=['SK_ID_CURR'], axis=1)
+    #X = data_test_ohe.drop(columns=['SK_ID_CURR'], axis=1)
+    #shap_values_global = explainer.shap_values(X)
+    #feature_importance = np.abs(shap_values_global).mean(axis=0)
+    #sorted_inds = np.argsort(feature_importance)
+    #top_inds = sorted_inds[-10:]
+    #top_feature_names = X.columns[top_inds].tolist()
+    #top_shap_values_global = shap_values_global[top_inds].tolist()
+    #response = {'top_feature_names': top_feature_names, 'top_shap_values_global': top_shap_values_global}
+    #return json.dumps(response)
     shap_values_global = explainer.shap_values(X)
-    feature_importance = np.abs(shap_values_global).mean(axis=0)
-    sorted_inds = np.argsort(feature_importance)
-    top_inds = sorted_inds[-10:]
-    top_feature_names = X.columns[top_inds].tolist()
-    top_shap_values_global = shap_values_global[top_inds].tolist()
-    response = {'top_feature_names': top_feature_names, 'top_shap_values_global': top_shap_values_global}
+    top_n = 10  # Change this to desired number of top SHAP values
+    abs_shap_values = np.abs(shap_values_global)
+    top_indices = np.argsort(abs_shap_values.flatten())[-top_n:]
+    top_shap_values_global = shap_values_global[:, top_indices]
+    response = {'top_shap_values_global': top_shap_values_global}
     return json.dumps(response)
+
 
 @app.route('/threshold')
 def threshold():
