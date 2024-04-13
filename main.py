@@ -5,7 +5,7 @@ import pickle
 import pandas as pd
 import numpy as np
 import shap
-
+import zlib
 # Créer une instance de l'application Flask
 app = Flask(__name__)
 
@@ -51,6 +51,13 @@ def predict():
                     'classe': classe}
         return json.dumps(response)
 
+@app.route('/explain/', methods=['GET'])
+def explain():
+    shap_values = explainer.shap_values(X)
+    shap_values_json = json.dumps(shap_values)
+    compressed_shap_values = zlib.compress(shap_values_json.encode())
+    response = {'shap_values': compressed_shap_values}
+    return json.dumps(response)
 @app.route('/explain_local/', methods=['GET'])
 def explain_local():
     customer_id = request.args.get("customer_id")
