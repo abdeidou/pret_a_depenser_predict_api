@@ -1,6 +1,6 @@
 import os
 import json
-from flask import Flask, request
+from flask import Flask, request, send_file
 import pickle
 import pandas as pd
 import numpy as np
@@ -54,9 +54,14 @@ def predict():
 @app.route('/explain')
 def explain():
     shap_values = explainer.shap_values(X)
-    compressed_shap_values = zlib.compress(shap_values.tolist().encode())
-    response = {'compressed_shap_values': compressed_shap_values}
-    return json.dumps(response)
+    response = {'shap_values': shap_values.tolist()}
+    json_response = json.dumps(response)
+    compressed_json_response = zlib.compress(json_response.encode())
+    return send_file(compressed_json_response,
+                     mimetype='application/octet-stream',
+                     as_attachment=True,
+                     attachment_filename='compressed_json_response.json.gz',
+                     compress=True)
 @app.route('/explain_local/', methods=['GET'])
 def explain_local():
     customer_id = request.args.get("customer_id")
