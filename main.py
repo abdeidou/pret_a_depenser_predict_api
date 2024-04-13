@@ -52,27 +52,15 @@ def predict():
         return json.dumps(response)
 
 
+from functools import lru_cache
+import jsonify
 @app.route('/explain')
-def explain():
-    # Calculer les SHAP values
+@lru_cache(maxsize=128)  # Taille maximale du cache
+def explain_cached():
+    # Votre code pour générer les SHAP values
     shap_values = explainer.shap_values(X)
-
-    # Convertir les SHAP values en JSON
-    shap_values_json = json.dumps(shap_values.tolist())
-
-    # Compresser les données JSON avec zlib
-    compressed_data = zlib.compress(shap_values_json.encode())
-
-    # Créer une réponse HTTP
-    response = make_response(compressed_data)
-
-    # Définir le mimetype comme application/json
-    response.headers['Content-Type'] = 'application/json'
-
-    # Définir le nom de fichier et l'indicateur d'attachement
-    response.headers['Content-Disposition'] = 'attachment; filename=compressed_shap_values.json.gz'
-
-    return response
+    response = {'shap_values': shap_values.tolist()}
+    return jsonify(response)
 
 @app.route('/explain_local/', methods=['GET'])
 def explain_local():

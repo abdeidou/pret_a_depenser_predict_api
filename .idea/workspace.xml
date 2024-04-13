@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="send_file to deploy">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="make_response to deploy" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,14 +89,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
-    </task>
-    <task id="LOCAL-00100" summary="test cloud service to deploy">
-      <option name="closed" value="true" />
-      <created>1711641856388</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1711641856388</updated>
     </task>
     <task id="LOCAL-00101" summary="config service deployment to deploy">
       <option name="closed" value="true" />
@@ -484,7 +474,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713009123892</updated>
     </task>
-    <option name="localTasksCounter" value="149" />
+    <task id="LOCAL-00149" summary="make_response to deploy">
+      <option name="closed" value="true" />
+      <created>1713010967099</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1713010967100</updated>
+    </task>
+    <option name="localTasksCounter" value="150" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -499,7 +497,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test_api corrections done to deploy" />
     <MESSAGE value="modif class accepte refuse to deploy" />
     <MESSAGE value="modif decision class to deploy" />
     <MESSAGE value="modif class to classe to deploy" />
@@ -524,6 +521,7 @@
     <MESSAGE value="shap_values_json to deploy" />
     <MESSAGE value="compressed_shap_values to deploy" />
     <MESSAGE value="send_file to deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="send_file to deploy" />
+    <MESSAGE value="make_response to deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="make_response to deploy" />
   </component>
 </project>
