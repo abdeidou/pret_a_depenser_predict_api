@@ -53,7 +53,7 @@ def predict():
 
 
 from functools import lru_cache
-import jsonify
+from flask import jsonify
 @app.route('/explain')
 @lru_cache(maxsize=128)  # Taille maximale du cache
 def explain_cached():
