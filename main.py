@@ -64,7 +64,8 @@ def explain_local():
         #response = {'feature_names': customer_row_ohe.columns.tolist(), 'shap_values_local': shap_values_local.tolist()}
         #return json.dumps(response)
         shap_values_local = explainer.shap_values(customer_row_ohe)
-        response = {'shap_values_local': shap_values_local.tolist()}
+        feature_names = customer_row_ohe.columns.tolist()
+        response = {'shap_values_local': shap_values_local.tolist(), 'feature_names': feature_names}
         return json.dumps(response)
 
 @app.route('/explain_global')

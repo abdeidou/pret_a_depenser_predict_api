@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="add top explain_global  to deploy">
+    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="modif explain_local to deploy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,22 +91,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
-    </task>
-    <task id="LOCAL-00089" summary="modif test_api with case redirect to deploy">
-      <option name="closed" value="true" />
-      <created>1711630414957</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1711630414957</updated>
-    </task>
-    <task id="LOCAL-00090" summary="modif test_api undo case redirect to deploy">
-      <option name="closed" value="true" />
-      <created>1711630722346</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1711630722346</updated>
     </task>
     <task id="LOCAL-00091" summary="modif test_api">
       <option name="closed" value="true" />
@@ -485,7 +468,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712945365393</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="add explain_local and global to deploy">
+      <option name="closed" value="true" />
+      <created>1712996725132</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1712996725132</updated>
+    </task>
+    <task id="LOCAL-00139" summary="modif explain_local to deploy">
+      <option name="closed" value="true" />
+      <created>1712997077756</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1712997077756</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -500,8 +499,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test workflows" />
-    <MESSAGE value="test pytest workflow" />
     <MESSAGE value="add comments to deploy" />
     <MESSAGE value="test cloud service to deploy" />
     <MESSAGE value="config service deployment to deploy" />
@@ -525,6 +522,8 @@
     <MESSAGE value="correct shap_values_global to deploy" />
     <MESSAGE value="add explain_global route to deploy" />
     <MESSAGE value="add top explain_global  to deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="add top explain_global  to deploy" />
+    <MESSAGE value="add explain_local and global to deploy" />
+    <MESSAGE value="modif explain_local to deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="modif explain_local to deploy" />
   </component>
 </project>
