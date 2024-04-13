@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="explain_cached to deploy">
+    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="requirements msgpack to deploy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,22 +91,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
-    </task>
-    <task id="LOCAL-00103" summary="config service deployment to deploy">
-      <option name="closed" value="true" />
-      <created>1711643616273</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1711643616275</updated>
-    </task>
-    <task id="LOCAL-00104" summary="config service deployment to deploy">
-      <option name="closed" value="true" />
-      <created>1711644660862</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1711644660862</updated>
     </task>
     <task id="LOCAL-00105" summary="config service deployment to deploy">
       <option name="closed" value="true" />
@@ -485,7 +468,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713011824254</updated>
     </task>
-    <option name="localTasksCounter" value="152" />
+    <task id="LOCAL-00152" summary="msgpack to deploy">
+      <option name="closed" value="true" />
+      <created>1713012888163</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1713012888163</updated>
+    </task>
+    <task id="LOCAL-00153" summary="requirements msgpack to deploy">
+      <option name="closed" value="true" />
+      <created>1713013581992</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1713013581993</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -500,8 +499,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modif decision class to deploy" />
-    <MESSAGE value="modif class to classe to deploy" />
     <MESSAGE value="modif positive to negative to deploy" />
     <MESSAGE value="add selected model to deploy" />
     <MESSAGE value="notebook modélisation finalisé" />
@@ -525,6 +522,8 @@
     <MESSAGE value="send_file to deploy" />
     <MESSAGE value="make_response to deploy" />
     <MESSAGE value="explain_cached to deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="explain_cached to deploy" />
+    <MESSAGE value="msgpack to deploy" />
+    <MESSAGE value="requirements msgpack to deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="requirements msgpack to deploy" />
   </component>
 </project>

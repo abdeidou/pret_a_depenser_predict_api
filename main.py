@@ -55,12 +55,13 @@ def predict():
 import msgpack
 from flask import jsonify
 @app.route('/explain')
-def explain_cached():
+def explain():
     # Votre code pour générer les SHAP values
     shap_values = explainer.shap_values(X)
     packed_data = msgpack.packb(shap_values.tolist())
-    response = {'shap_values': packed_data}
-    return jsonify(response)
+    #response = {'shap_values': packed_data}
+    #return jsonify(response)
+    return packed_data
 
 @app.route('/explain_local/', methods=['GET'])
 def explain_local():
