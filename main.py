@@ -77,15 +77,20 @@ def explain_local():
 def explain_global():
     # Créer le graphique SHAP beeswarm
     #fig = shap.plots.beeswarm(shap_values)
-    fig = shap.summary_plot(shap_values, X)
+    # Créer le graphique SHAP
+    shap.summary_plot(shap_values, X)
+
     # Enregistrer le graphique dans un buffer mémoire
     buf = io.BytesIO()
-    fig.savefig(buf, format='png')
+    plt.savefig(buf, format='png')
     buf.seek(0)
+
     # Convertir le graphique en base64
     graph_data = base64.b64encode(buf.read()).decode('utf-8')
+
     # Créer la réponse JSON avec les données du graphique
     response = {'shap_plot': graph_data}
+
     return jsonify(response)
 
 
