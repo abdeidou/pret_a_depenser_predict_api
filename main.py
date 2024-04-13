@@ -51,12 +51,12 @@ def predict():
                     'classe': classe}
         return json.dumps(response)
 
-@app.route('/explain/', methods=['GET'])
+@app.route('/explain')
 def explain():
     shap_values = explainer.shap_values(X)
     shap_values_json = json.dumps(shap_values)
     compressed_shap_values = zlib.compress(shap_values_json.encode())
-    response = {'shap_values': compressed_shap_values}
+    response = {'shap_values_json': shap_values_json}
     return json.dumps(response)
 @app.route('/explain_local/', methods=['GET'])
 def explain_local():
