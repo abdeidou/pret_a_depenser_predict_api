@@ -52,16 +52,29 @@ def predict():
         return json.dumps(response)
 
 
-import msgpack
+import matplotlib.pyplot as plt
+import io
+import base64
 from flask import jsonify
 @app.route('/explain')
 def explain():
     # Votre code pour générer les SHAP values
     shap_values = explainer.shap_values(X)
-    packed_data = msgpack.packb(shap_values.tolist())
-    #response = {'shap_values': packed_data}
-    #return jsonify(response)
-    return packed_data
+    # Créer le graphique SHAP
+    shap.summary_plot(shap_values, X)
+
+    # Enregistrer le graphique dans un buffer mémoire
+    buf = io.BytesIO()
+    plt.savefig(buf, format='png')
+    buf.seek(0)
+
+    # Convertir le graphique en base64
+    graph_data = base64.b64encode(buf.read()).decode('utf-8')
+
+    # Créer la réponse JSON avec les données du graphique
+    response = {'shap_plot': graph_data}
+
+    return jsonify(response)
 
 @app.route('/explain_local/', methods=['GET'])
 def explain_local():

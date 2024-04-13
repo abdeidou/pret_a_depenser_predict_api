@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="requirements msgpack to deploy">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="return packed_data to deploy">
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,14 +91,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
-    </task>
-    <task id="LOCAL-00105" summary="config service deployment to deploy">
-      <option name="closed" value="true" />
-      <created>1711644670661</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1711644670662</updated>
     </task>
     <task id="LOCAL-00106" summary="config service deployment to deploy">
       <option name="closed" value="true" />
@@ -484,7 +476,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713013581993</updated>
     </task>
-    <option name="localTasksCounter" value="154" />
+    <task id="LOCAL-00154" summary="return packed_data to deploy">
+      <option name="closed" value="true" />
+      <created>1713014250599</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1713014250600</updated>
+    </task>
+    <option name="localTasksCounter" value="155" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -499,7 +499,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modif positive to negative to deploy" />
     <MESSAGE value="add selected model to deploy" />
     <MESSAGE value="notebook modélisation finalisé" />
     <MESSAGE value="add explainer route to deploy" />
@@ -524,6 +523,7 @@
     <MESSAGE value="explain_cached to deploy" />
     <MESSAGE value="msgpack to deploy" />
     <MESSAGE value="requirements msgpack to deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="requirements msgpack to deploy" />
+    <MESSAGE value="return packed_data to deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="return packed_data to deploy" />
   </component>
 </project>
