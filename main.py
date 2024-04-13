@@ -16,8 +16,7 @@ model_path = "./data/selected_model.pickle"
 lgbm = pickle.load(open(model_path, 'rb'))
 threshold_opt = 0.65
 X = data_test_ohe.drop(columns=['SK_ID_CURR'], axis=1)
-explainer = shap.TreeExplainer(lgbm)
-
+explainer = shap.Explainer(lgbm)
 
 #explainer = pickle.load(open('./data/selected_model_explainer.pickle', 'rb'))
 

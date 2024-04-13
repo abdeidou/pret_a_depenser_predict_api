@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="modif explain_local to deploy">
+    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="add TreeExplainer to deploy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,14 +92,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
-    </task>
-    <task id="LOCAL-00092" summary="test workflows">
-      <option name="closed" value="true" />
-      <created>1711631449504</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1711631449504</updated>
     </task>
     <task id="LOCAL-00093" summary="test pytest workflow">
       <option name="closed" value="true" />
@@ -484,7 +477,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712997972228</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="add TreeExplainer to deploy">
+      <option name="closed" value="true" />
+      <created>1713001038604</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1713001038604</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -499,7 +500,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add comments to deploy" />
     <MESSAGE value="test cloud service to deploy" />
     <MESSAGE value="config service deployment to deploy" />
     <MESSAGE value="test deployment to deploy" />
@@ -524,6 +524,7 @@
     <MESSAGE value="add top explain_global  to deploy" />
     <MESSAGE value="add explain_local and global to deploy" />
     <MESSAGE value="modif explain_local to deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="modif explain_local to deploy" />
+    <MESSAGE value="add TreeExplainer to deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="add TreeExplainer to deploy" />
   </component>
 </project>
