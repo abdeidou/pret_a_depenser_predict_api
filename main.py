@@ -52,14 +52,14 @@ def predict():
         return json.dumps(response)
 
 
-from functools import lru_cache
+import msgpack
 from flask import jsonify
 @app.route('/explain')
-@lru_cache(maxsize=128)  # Taille maximale du cache
 def explain_cached():
     # Votre code pour générer les SHAP values
     shap_values = explainer.shap_values(X)
-    response = {'shap_values': shap_values.tolist()}
+    packed_data = msgpack.packb(shap_values.tolist())
+    response = {'shap_values': packed_data}
     return jsonify(response)
 
 @app.route('/explain_local/', methods=['GET'])
