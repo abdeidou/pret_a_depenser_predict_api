@@ -17,7 +17,7 @@ lgbm = pickle.load(open(model_path, 'rb'))
 threshold_opt = 0.65
 X = data_test_ohe.drop(columns=['SK_ID_CURR'], axis=1)
 explainer = shap.Explainer(lgbm)
-
+shap_values = explainer.shap_values(X)
 #explainer = pickle.load(open('./data/selected_model_explainer.pickle', 'rb'))
 
 
@@ -56,28 +56,25 @@ import matplotlib.pyplot as plt
 import io
 import base64
 from flask import jsonify
-@app.route('/explain')
-def explain():
-    # Votre code pour générer les SHAP values
-    shap_values = explainer.shap_values(X)
+@app.route('/explain_local/', methods=['GET'])
+def explain_local():
+    customer_id = request.args.get("customer_id")
+    customer_row_ohe = data_test_ohe[data_test['SK_ID_CURR'] == str(customer_id)]
+    customer_index = customer_row_ohe.index
     # Créer le graphique SHAP
-    shap.summary_plot(shap_values, X)
-
+    shap.plots.waterfall(shap_values[customer_index])
     # Enregistrer le graphique dans un buffer mémoire
     buf = io.BytesIO()
     plt.savefig(buf, format='png')
     buf.seek(0)
-
     # Convertir le graphique en base64
     graph_data = base64.b64encode(buf.read()).decode('utf-8')
-
     # Créer la réponse JSON avec les données du graphique
     response = {'shap_plot': graph_data}
-
     return jsonify(response)
 
-@app.route('/explain_local/', methods=['GET'])
-def explain_local():
+@app.route('/explain_local2/', methods=['GET'])
+def explain_local2():
     customer_id = request.args.get("customer_id")
     customer_row_ohe = data_test_ohe[data_test['SK_ID_CURR'] == str(customer_id)].drop(columns=['SK_ID_CURR'], axis=1)
     customer_index = customer_row_ohe.index
@@ -96,22 +93,17 @@ def explain_local():
 
 @app.route('/explain_global')
 def explain_global():
-    #X = data_test_ohe.drop(columns=['SK_ID_CURR'], axis=1)
-    #shap_values_global = explainer.shap_values(X)
-    #feature_importance = np.abs(shap_values_global).mean(axis=0)
-    #sorted_inds = np.argsort(feature_importance)
-    #top_inds = sorted_inds[-10:]
-    #top_feature_names = X.columns[top_inds].tolist()
-    #top_shap_values_global = shap_values_global[top_inds].tolist()
-    #response = {'top_feature_names': top_feature_names, 'top_shap_values_global': top_shap_values_global}
-    #return json.dumps(response)
-    shap_values_global = explainer.shap_values(X)
-    top_n = 10  # Change this to desired number of top SHAP values
-    abs_shap_values = np.abs(shap_values_global)
-    top_indices = np.argsort(abs_shap_values.flatten())[-top_n:]
-    top_shap_values_global = shap_values_global[:, top_indices]
-    response = {'top_shap_values_global': top_shap_values_global}
-    return json.dumps(response)
+    # Créer le graphique SHAP
+    shap.plots.beeswarm(shap_values)
+    # Enregistrer le graphique dans un buffer mémoire
+    buf = io.BytesIO()
+    plt.savefig(buf, format='png')
+    buf.seek(0)
+    # Convertir le graphique en base64
+    graph_data = base64.b64encode(buf.read()).decode('utf-8')
+    # Créer la réponse JSON avec les données du graphique
+    response = {'shap_plot': graph_data}
+    return jsonify(response)
 
 
 @app.route('/threshold')
