@@ -92,22 +92,6 @@
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
     </task>
-    <task id="LOCAL-00142" summary="delete TreeExplainer to deploy">
-      <option name="closed" value="true" />
-      <created>1713003777457</created>
-      <option name="number" value="00142" />
-      <option name="presentableId" value="LOCAL-00142" />
-      <option name="project" value="LOCAL" />
-      <updated>1713003777457</updated>
-    </task>
-    <task id="LOCAL-00143" summary="add explain to deploy">
-      <option name="closed" value="true" />
-      <created>1713005437449</created>
-      <option name="number" value="00143" />
-      <option name="presentableId" value="LOCAL-00143" />
-      <option name="project" value="LOCAL" />
-      <updated>1713005437449</updated>
-    </task>
     <task id="LOCAL-00144" summary="shap_values_json to deploy">
       <option name="closed" value="true" />
       <created>1713006830473</created>
@@ -484,7 +468,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713112685591</updated>
     </task>
-    <option name="localTasksCounter" value="191" />
+    <task id="LOCAL-00191" summary="modif explain_local to deploy">
+      <option name="closed" value="true" />
+      <created>1713113181238</created>
+      <option name="number" value="00191" />
+      <option name="presentableId" value="LOCAL-00191" />
+      <option name="project" value="LOCAL" />
+      <updated>1713113181238</updated>
+    </task>
+    <task id="LOCAL-00192" summary="modif explain_local to deploy">
+      <option name="closed" value="true" />
+      <created>1713113518105</created>
+      <option name="number" value="00192" />
+      <option name="presentableId" value="LOCAL-00192" />
+      <option name="project" value="LOCAL" />
+      <updated>1713113518106</updated>
+    </task>
+    <option name="localTasksCounter" value="193" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
