@@ -20,6 +20,8 @@ explainer = shap.Explainer(lgbm)
 shap_values = explainer.shap_values(X)
 explainer_tree = shap.TreeExplainer(lgbm)
 shap_values_tree = explainer_tree.shap_values(X)
+# Créer un objet Explanation
+explanation = shap.Explanation(values=shap_values_tree, base_values=explainer_tree.expected_value, data=X)
 #explainer = pickle.load(open('./data/selected_model_explainer.pickle', 'rb'))
 
 
@@ -63,9 +65,6 @@ def explain_local():
     customer_id = request.args.get("customer_id")
     customer_row_ohe = data_test_ohe[data_test['SK_ID_CURR'] == str(customer_id)]
     customer_index = customer_row_ohe.index
-
-    # Créer un objet Explanation
-    explanation = shap.Explanation(values=shap_values_tree, base_values=explainer_tree.expected_value, data=X)
     # Obtenez l'index du client et créez le graphique SHAP
     shap.waterfall_plot(explanation[int(customer_index.values[0])])
     # Enregistrer le graphique dans un buffer mémoire
