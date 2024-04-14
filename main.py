@@ -66,7 +66,7 @@ def explain_local():
     # Créer un objet Explanation
     explanation = shap.Explanation(values=shap_values_tree, base_values=explainer_tree.expected_value, data=X)
     # Obtenez l'index du client et créez le graphique SHAP
-    shap.waterfall_plot(explanation[customer_index])
+    shap.waterfall_plot(explanation)
     # Enregistrer le graphique dans un buffer mémoire
     buf = io.BytesIO()
     plt.savefig(buf, format='png')
