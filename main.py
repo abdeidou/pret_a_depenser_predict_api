@@ -106,7 +106,7 @@ def threshold():
 
 @app.route('/customer_index')
 def customer_index():
-    response = {'customer_index': customer_index.tolist()}
+    response = {'customer_index_type': str(type(customer_index))}
     return json.dumps(response)
 
 if __name__ == "__main__":
