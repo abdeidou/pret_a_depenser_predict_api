@@ -92,22 +92,6 @@
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
     </task>
-    <task id="LOCAL-00116" summary="modif class accepte refuse to deploy">
-      <option name="closed" value="true" />
-      <created>1711812652725</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1711812652725</updated>
-    </task>
-    <task id="LOCAL-00117" summary="modif decision class to deploy">
-      <option name="closed" value="true" />
-      <created>1711812974339</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1711812974339</updated>
-    </task>
     <task id="LOCAL-00118" summary="modif class to classe to deploy">
       <option name="closed" value="true" />
       <created>1711813575794</created>
@@ -484,7 +468,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713029522935</updated>
     </task>
-    <option name="localTasksCounter" value="165" />
+    <task id="LOCAL-00165" summary="modif explain_global to deploy">
+      <option name="closed" value="true" />
+      <created>1713030228172</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1713030228172</updated>
+    </task>
+    <task id="LOCAL-00166" summary="modif explain_global to deploy">
+      <option name="closed" value="true" />
+      <created>1713030523778</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1713030523778</updated>
+    </task>
+    <option name="localTasksCounter" value="167" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
