@@ -78,6 +78,15 @@ def explain_local():
     response = {'shap_plot': graph_data}
     return jsonify(response)
 
+@app.route('/explain_local_test/', methods=['GET'])
+def explain_local_test():
+    customer_id = request.args.get("customer_id")
+    customer_row_ohe = data_test_ohe[data_test['SK_ID_CURR'] == str(customer_id)]
+    customer_index = customer_row_ohe.index
+
+    response = {'customer_index': customer_index, 'customer_index_type': str(type(customer_index))}
+    return jsonify(response)
+
 @app.route('/explain_global')
 def explain_global():
     # Créer le graphique SHAP beeswarm
