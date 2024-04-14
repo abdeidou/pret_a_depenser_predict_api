@@ -78,7 +78,7 @@ def explain_global():
     # Créer le graphique SHAP beeswarm
     #shap.plots.beeswarm(shap_values)
     # Créer le graphique SHAP
-    shap.summary_plot(shap_values, X)
+    shap.summary_plot(shap_values, X[0])
 
     # Enregistrer le graphique dans un buffer mémoire
     buf = io.BytesIO()
