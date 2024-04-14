@@ -89,7 +89,7 @@ def customer_index_type():
     #else:
     #    response = {'customer_index': -1, 'customer_index_type': "rien"}
     #    return jsonify(response)
-    response = {'customer_index': customer_row.index}
+    response = {'customer_index': -1}
     return jsonify(response)
 @app.route('/explain_global')
 def explain_global():
