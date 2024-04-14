@@ -81,7 +81,7 @@ def explain_local():
 @app.route('/customer_index_type/', methods=['GET'])
 def customer_index_type():
     customer_id = request.args.get("customer_id")
-    customer_index = data_test_ohe[data_test_ohe['SK_ID_CURR'] == str(customer_id)].index
+    customer_index = data_test_ohe[data_test_ohe['SK_ID_CURR'] == customer_id].index
     if len(customer_index) > 0:
         response = {'customer_index': customer_index, 'customer_index_type': str(type(customer_index))}
         return jsonify(response)
