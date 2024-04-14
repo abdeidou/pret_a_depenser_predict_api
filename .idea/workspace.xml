@@ -93,14 +93,6 @@
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
     </task>
-    <task id="LOCAL-00126" summary="add shap requirements to deploy">
-      <option name="closed" value="true" />
-      <created>1712426552426</created>
-      <option name="number" value="00126" />
-      <option name="presentableId" value="LOCAL-00126" />
-      <option name="project" value="LOCAL" />
-      <updated>1712426552427</updated>
-    </task>
     <task id="LOCAL-00127" summary="correct test_api">
       <option name="closed" value="true" />
       <created>1712426973665</created>
@@ -485,7 +477,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713097012552</updated>
     </task>
-    <option name="localTasksCounter" value="175" />
+    <task id="LOCAL-00175" summary="modif explain_local to deploy">
+      <option name="closed" value="true" />
+      <created>1713097459772</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1713097459772</updated>
+    </task>
+    <option name="localTasksCounter" value="176" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -21,7 +21,7 @@ shap_values = explainer.shap_values(X)
 explainer_tree = shap.TreeExplainer(lgbm)
 shap_values_tree = explainer_tree.shap_values(X)
 #explainer = pickle.load(open('./data/selected_model_explainer.pickle', 'rb'))
-
+customer_index = -1
 
 # Fonction réponse à la requête acceuil
 @app.route("/")
@@ -63,10 +63,11 @@ def explain_local():
     customer_id = request.args.get("customer_id")
     customer_row_ohe = data_test_ohe[data_test['SK_ID_CURR'] == str(customer_id)]
     customer_index = customer_row_ohe.index
+
     # Créer un objet Explanation
     explanation = shap.Explanation(values=shap_values_tree, base_values=explainer_tree.expected_value, data=X)
     # Obtenez l'index du client et créez le graphique SHAP
-    shap.waterfall_plot(explanation[int(customer_index)])
+    shap.waterfall_plot(explanation[1])
     # Enregistrer le graphique dans un buffer mémoire
     buf = io.BytesIO()
     plt.savefig(buf, format='png')
@@ -103,6 +104,10 @@ def threshold():
     response = {'threshold': threshold_opt}
     return json.dumps(response)
 
+@app.route('/customer_index')
+def customer_index():
+    response = {'customer_index': customer_index}
+    return json.dumps(response)
 
 if __name__ == "__main__":
     app.run(debug=False, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
