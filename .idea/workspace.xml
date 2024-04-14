@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="modif explain_global to deploy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,22 +92,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
-    </task>
-    <task id="LOCAL-00118" summary="modif class to classe to deploy">
-      <option name="closed" value="true" />
-      <created>1711813575794</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1711813575794</updated>
-    </task>
-    <task id="LOCAL-00119" summary="modif positive to negative to deploy">
-      <option name="closed" value="true" />
-      <created>1712054694505</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1712054694506</updated>
     </task>
     <task id="LOCAL-00120" summary="modif positive to negative to deploy">
       <option name="closed" value="true" />
@@ -484,7 +469,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713030523778</updated>
     </task>
-    <option name="localTasksCounter" value="167" />
+    <task id="LOCAL-00167" summary="modif explain_global to deploy">
+      <option name="closed" value="true" />
+      <created>1713061268843</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1713061268843</updated>
+    </task>
+    <task id="LOCAL-00168" summary="modif explain_global to deploy">
+      <option name="closed" value="true" />
+      <created>1713061753351</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1713061753352</updated>
+    </task>
+    <option name="localTasksCounter" value="169" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
