@@ -78,14 +78,16 @@ def explain_local():
     response = {'shap_plot': graph_data}
     return jsonify(response)
 
-@app.route('/explain_local_test/', methods=['GET'])
-def explain_local_test():
+@app.route('/customer_index_type/', methods=['GET'])
+def customer_index_type():
     customer_id = request.args.get("customer_id")
-    customer_row_ohe = data_test_ohe[data_test['SK_ID_CURR'] == str(customer_id)]
-    customer_index = customer_row_ohe.index
-
-    response = {'customer_index': customer_index, 'customer_index_type': str(type(customer_index))}
-    return jsonify(response)
+    customer_index = data_test_ohe[data_test_ohe['SK_ID_CURR'] == str(customer_id)].index
+    if len(customer_index) > 0:
+        response = {'customer_index': customer_index, 'customer_index_type': str(type(customer_index))}
+        return jsonify(response)
+    else:
+        response = {'customer_index': -1, 'customer_index_type': "rien"}
+        return jsonify(response)
 
 @app.route('/explain_global')
 def explain_global():
