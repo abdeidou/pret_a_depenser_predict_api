@@ -62,7 +62,8 @@ def explain_local():
     customer_row_ohe = data_test_ohe[data_test['SK_ID_CURR'] == str(customer_id)]
     customer_index = customer_row_ohe.index
     # Créer le graphique SHAP
-    shap.summary_plot(shap_values[customer_index], X)
+    #shap.summary_plot(shap_values[customer_index], X)
+    shap.plots.waterfall(shap_values[customer_index])
     # Enregistrer le graphique dans un buffer mémoire
     buf = io.BytesIO()
     plt.savefig(buf, format='png')
