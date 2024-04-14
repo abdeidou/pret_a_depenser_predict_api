@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="modif explain_local to deploy">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,22 +91,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
-    </task>
-    <task id="LOCAL-00136" summary="add explain_global route to deploy">
-      <option name="closed" value="true" />
-      <created>1712928304003</created>
-      <option name="number" value="00136" />
-      <option name="presentableId" value="LOCAL-00136" />
-      <option name="project" value="LOCAL" />
-      <updated>1712928304004</updated>
-    </task>
-    <task id="LOCAL-00137" summary="add top explain_global  to deploy">
-      <option name="closed" value="true" />
-      <created>1712945365391</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1712945365393</updated>
     </task>
     <task id="LOCAL-00138" summary="add explain_local and global to deploy">
       <option name="closed" value="true" />
@@ -485,7 +468,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713102444771</updated>
     </task>
-    <option name="localTasksCounter" value="185" />
+    <task id="LOCAL-00185" summary="modif explain_local to deploy">
+      <option name="closed" value="true" />
+      <created>1713102916036</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
+      <option name="project" value="LOCAL" />
+      <updated>1713102916036</updated>
+    </task>
+    <task id="LOCAL-00186" summary="modif explain_local to deploy">
+      <option name="closed" value="true" />
+      <created>1713103428093</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1713103428094</updated>
+    </task>
+    <option name="localTasksCounter" value="187" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

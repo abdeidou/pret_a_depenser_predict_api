@@ -81,9 +81,10 @@ def explain_local():
 @app.route('/customer_index_type/', methods=['GET'])
 def customer_index_type():
     customer_id = request.args.get("customer_id")
-    customer_index = data_test_ohe[data_test_ohe['SK_ID_CURR'] == str(customer_id)].index
-    if len(customer_index) == 1:
-        response = {'customer_index': customer_index[0], 'customer_index_type': str(type(customer_index[0]))}
+    customer_row = data_test[data_test['SK_ID_CURR'] == str(customer_id)]
+    if len(customer_row) == 1:
+        customer_index = customer_row.index
+        response = {'customer_index': customer_index, 'customer_index_type': str(type(customer_index))}
         return jsonify(response)
     else:
         response = {'customer_index': -1, 'customer_index_type': "rien"}
