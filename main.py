@@ -18,6 +18,8 @@ threshold_opt = 0.65
 X = data_test_ohe.drop(columns=['SK_ID_CURR'], axis=1)
 explainer = shap.Explainer(lgbm)
 shap_values = explainer.shap_values(X)
+explainer_tree = shap.TreeExplainer(lgbm)
+shap_values_tree = explainer_tree.shap_values(X)
 #explainer = pickle.load(open('./data/selected_model_explainer.pickle', 'rb'))
 
 
@@ -61,9 +63,10 @@ def explain_local():
     customer_id = request.args.get("customer_id")
     customer_row_ohe = data_test_ohe[data_test['SK_ID_CURR'] == str(customer_id)]
     customer_index = customer_row_ohe.index
-    # Créer le graphique SHAP
-    #shap.summary_plot(shap_values[customer_index], X)
-    shap.waterfall_plot(shap_values[customer_index])
+    # Créer un objet Explanation
+    explanation = shap.Explanation(values=shap_values_tree, base_values=explainer_tree.expected_value, data=X)
+    # Obtenez l'index du client et créez le graphique SHAP
+    shap.waterfall_plot(explanation[customer_index])
     # Enregistrer le graphique dans un buffer mémoire
     buf = io.BytesIO()
     plt.savefig(buf, format='png')

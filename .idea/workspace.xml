@@ -92,14 +92,6 @@
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
     </task>
-    <task id="LOCAL-00122" summary="notebook modélisation finalisé">
-      <option name="closed" value="true" />
-      <created>1712148674756</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1712148674756</updated>
-    </task>
     <task id="LOCAL-00123" summary="notebook modélisation finalisé">
       <option name="closed" value="true" />
       <created>1712148699128</created>
@@ -484,7 +476,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713062683347</updated>
     </task>
-    <option name="localTasksCounter" value="171" />
+    <task id="LOCAL-00171" summary="modif explain_global to deploy">
+      <option name="closed" value="true" />
+      <created>1713095239131</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1713095239132</updated>
+    </task>
+    <option name="localTasksCounter" value="172" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
