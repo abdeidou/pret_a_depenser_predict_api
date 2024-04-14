@@ -82,14 +82,15 @@ def explain_local():
 def customer_index_type():
     customer_id = request.args.get("customer_id")
     customer_row = data_test[data_test['SK_ID_CURR'] == str(customer_id)]
-    if len(customer_row) == 1:
-        customer_index = customer_row.index
-        response = {'customer_index': customer_index, 'customer_index_type': str(type(customer_index))}
-        return jsonify(response)
-    else:
-        response = {'customer_index': -1, 'customer_index_type': "rien"}
-        return jsonify(response)
-
+    #if len(customer_row) == 1:
+    #    customer_index = customer_row.index
+    #    response = {'customer_index': customer_index, 'customer_index_type': str(type(customer_index))}
+    #    return jsonify(response)
+    #else:
+    #    response = {'customer_index': -1, 'customer_index_type': "rien"}
+    #    return jsonify(response)
+    response = {'customer_index': customer_row.index}
+    return jsonify(response)
 @app.route('/explain_global')
 def explain_global():
     # Créer le graphique SHAP beeswarm
