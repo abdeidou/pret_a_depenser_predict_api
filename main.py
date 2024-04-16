@@ -8,11 +8,11 @@ import matplotlib.pyplot as plt
 import io
 import base64
 from flask import jsonify
-from flask_cache_external_assets import CacheExternalAssets
+from flask_caching import Cache
 
 # Créer une instance de l'application Flask
 app = Flask(__name__)
-cache = CacheExternalAssets(app)
+cache = Cache(app, config={'CACHE_TYPE': 'simple'})
 
 # Lire les données CSV, charger le modèle et le seuil optimal
 data_test = pd.read_csv("./data/application_test.csv", dtype={'SK_ID_CURR': str})
