@@ -36,6 +36,7 @@ def welkome():
     return "flask api running"
 
 # Fonction réponse à la requête customer_data
+@cache.cached(timeout=300, key_prefix='customer_data')
 @app.route('/customer_data/', methods=['GET'])
 def customer_data():
     customer_id = request.args.get("customer_id")
@@ -44,6 +45,7 @@ def customer_data():
     return json.dumps(response)
 
 # Fonction réponse à la requête predict
+@cache.cached(timeout=300, key_prefix='predict')
 @app.route('/predict/', methods=['GET'])
 def predict():
     customer_id = request.args.get("customer_id")
@@ -60,10 +62,10 @@ def predict():
                     'classe': classe}
         return json.dumps(response)
 
-
-# Fonction pour générer le graphique SHAP
-@cache.cached(timeout=300, key_prefix='shap_plot')
-def generate_shap_plot(customer_id):
+@cache.cached(timeout=300, key_prefix='explain_local')
+@app.route('/explain_local/', methods=['GET'])
+def explain_local():
+    customer_id = request.args.get("customer_id")
     # Générer le graphique SHAP pour le client spécifié
     customer_row_ohe = data_test_ohe[data_test['SK_ID_CURR'] == str(customer_id)]
     customer_index = customer_row_ohe.index
@@ -72,38 +74,27 @@ def generate_shap_plot(customer_id):
     buf = io.BytesIO()
     plt.savefig(buf, format='png')
     buf.seek(0)
-    graph_data = base64.b64encode(buf.getvalue()).decode()
-    return graph_data
+    # Convertir le graphique en base64
+    graph_data = base64.b64encode(buf.read()).decode('utf-8')
+    # Créer la réponse JSON avec les données du graphique
+    response = {'shap_plot': graph_data}
+    return jsonify(response)
 
-@app.route('/explain_local/', methods=['GET'])
-def explain_local():
-    customer_id = request.args.get("customer_id")
-    # Générer le graphique SHAP ou récupérer à partir du cache
-    graph_data = generate_shap_plot(customer_id)
-    # Créer l'URL vers l'image
-    image_url = f"data:image/png;base64,{graph_data}"
-    # Renvoyer l'URL de l'image dans une page HTML
-    return render_template('image.html', image_url=image_url)
-
-
+@cache.cached(timeout=300, key_prefix='explain_global')
 @app.route('/explain_global')
 def explain_global():
     # Créer le graphique SHAP beeswarm
     #shap.plots.beeswarm(shap_values)
     # Créer le graphique SHAP
     shap.summary_plot(shap_values, X)
-
     # Enregistrer le graphique dans un buffer mémoire
     buf = io.BytesIO()
     plt.savefig(buf, format='png')
     buf.seek(0)
-
     # Convertir le graphique en base64
     graph_data = base64.b64encode(buf.read()).decode('utf-8')
-
     # Créer la réponse JSON avec les données du graphique
     response = {'shap_plot': graph_data}
-
     return jsonify(response)
 
 
