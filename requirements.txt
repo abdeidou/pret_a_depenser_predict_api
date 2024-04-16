@@ -6,4 +6,4 @@ gunicorn==21.2.0
 pytest==8.1.1
 shap==0.45.0
 matplotlib
-flask_cache_external_assets==0.2.0
+flask-caching==2.1.0
