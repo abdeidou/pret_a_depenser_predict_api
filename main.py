@@ -1,11 +1,14 @@
 import os
 import json
-from flask import Flask, request, send_file
+from flask import Flask, request
 import pickle
 import pandas as pd
-import numpy as np
 import shap
-import zlib
+import matplotlib.pyplot as plt
+import io
+import base64
+from flask import jsonify
+
 # Créer une instance de l'application Flask
 app = Flask(__name__)
 
@@ -55,42 +58,38 @@ def predict():
                     'classe': classe}
         return json.dumps(response)
 
-
-import matplotlib.pyplot as plt
-import io
-import base64
-from flask import jsonify
 @app.route('/explain_local/', methods=['GET'])
 def explain_local():
     customer_id = request.args.get("customer_id")
     customer_row_ohe = data_test_ohe[data_test['SK_ID_CURR'] == str(customer_id)]
     customer_index = customer_row_ohe.index
     # Obtenez l'index du client et créez le graphique SHAP
-    shap.waterfall_plot(explanation[int(customer_index.values[0])])
+    shap.waterfall_plot(explanation[int(customer_index.values[0])], show=False)
+
+    # Enregistrer le graphique dans un buffer mémoire
+    #buf = io.BytesIO()
+    #plt.savefig(buf, format='png')
+    #buf.seek(0)
+    # Convertir le graphique en base64
+    #graph_data = base64.b64encode(buf.read()).decode('utf-8')
+    # Créer la réponse JSON avec les données du graphique
+    #response = {'shap_plot': graph_data}
+    #return jsonify(response)
+
     # Enregistrer le graphique dans un buffer mémoire
     buf = io.BytesIO()
     plt.savefig(buf, format='png')
     buf.seek(0)
-    # Convertir le graphique en base64
-    graph_data = base64.b64encode(buf.read()).decode('utf-8')
-    # Créer la réponse JSON avec les données du graphique
-    response = {'shap_plot': graph_data}
-    return jsonify(response)
 
-@app.route('/customer_index_type/', methods=['GET'])
-def customer_index_type():
-    customer_id = request.args.get("customer_id")
-    customer_row = data_test[data_test['SK_ID_CURR'] == str(customer_id)]
-    customer_index = customer_row.index
-    #if len(customer_row) == 1:
-    #    customer_index = customer_row.index
-    #    response = {'customer_index': customer_index, 'customer_index_type': str(type(customer_index))}
-    #    return jsonify(response)
-    #else:
-    #    response = {'customer_index': -1, 'customer_index_type': "rien"}
-    #    return jsonify(response)
-    response = {'customer_index': int(customer_index.values[0])}
-    return jsonify(response)
+    # Convertir le graphique en base64
+    graph_data = base64.b64encode(buf.getvalue()).decode()
+
+    # Créer l'URL vers l'image
+    image_url = f"data:image/png;base64,{graph_data}"
+
+    # Renvoyer l'URL comme réponse
+    return image_url
+
 @app.route('/explain_global')
 def explain_global():
     # Créer le graphique SHAP beeswarm
