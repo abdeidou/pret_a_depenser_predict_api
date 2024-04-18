@@ -71,11 +71,11 @@ def explain_local():
     customer_index = customer_row_ohe.index
     shap.waterfall_plot(explanation[int(customer_index.values[0])], show=False)
     # Convertir le graphique en base64
-    buf = io.BytesIO()
-    plt.savefig(buf, format='png')
-    buf.seek(0)
+    buf_local = io.BytesIO()
+    plt.savefig(buf_local, format='png')
+    buf_local.seek(0)
     # Convertir le graphique en base64
-    graph_data = base64.b64encode(buf.read()).decode('utf-8')
+    graph_data = base64.b64encode(buf_local.read()).decode('utf-8')
     # Créer la réponse JSON avec les données du graphique
     response = {'shap_plot': graph_data}
     return jsonify(response)
@@ -88,11 +88,11 @@ def explain_global():
     # Créer le graphique SHAP
     shap.summary_plot(shap_values, X)
     # Enregistrer le graphique dans un buffer mémoire
-    buf = io.BytesIO()
-    plt.savefig(buf, format='png')
-    buf.seek(0)
+    buf_global = io.BytesIO()
+    plt.savefig(buf_global, format='png')
+    buf_global.seek(0)
     # Convertir le graphique en base64
-    graph_data = base64.b64encode(buf.read()).decode('utf-8')
+    graph_data = base64.b64encode(buf_global.read()).decode('utf-8')
     # Créer la réponse JSON avec les données du graphique
     response = {'shap_plot': graph_data}
     return jsonify(response)
