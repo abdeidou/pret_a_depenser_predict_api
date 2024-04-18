@@ -72,6 +72,7 @@ def explain_local():
     shap.waterfall_plot(explanation[int(customer_index.values[0])], show=False)
     # Convertir le graphique en base64
     buf = io.BytesIO()
+    plt.figure(figsize=(10, 10))
     plt.savefig(buf, format='png')
     plt.close()
     buf.seek(0)
