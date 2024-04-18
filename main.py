@@ -71,24 +71,27 @@ def explain_test():
     customer_row_ohe = data_test_ohe[data_test['SK_ID_CURR'] == str(customer_id)]
     customer_index = customer_row_ohe.index
 
-    # Créer une figure Matplotlib avec la taille spécifiée
-    #fig = plt.figure(figsize=(20, 20))
-
     # Tracer le graphique SHAP
     shap.waterfall_plot(explanation[int(customer_index.values[0])], show=False)
-    # Save plot to BytesIO
-    buffer = io.BytesIO()
-    plt.savefig(buffer, dpi=250, format="png")
-    # Cleanup plot
-    plt.close(plt.gcf())
-    plt.clf()
-    plt.savefig(buffer, format='png')
-    image_png = buffer.getvalue()
-    buffer.close()
-    graphic = base64.b64encode(image_png)
-    graphic = graphic.decode('utf-8')
-    response = {'shap_plot': graphic}
+
+    # Sauvegarder le graphique SHAP dans un fichier HTML temporaire
+    tmp_html_file = "shap_graph.html"
+    shap.save_html(tmp_html_file)
+
+    # Lire le contenu du fichier HTML
+    with open(tmp_html_file, "rb") as file:
+        html_content = file.read()
+
+    # Supprimer le fichier HTML temporaire
+    os.remove(tmp_html_file)
+
+    # Convertir le contenu HTML en base64
+    html_base64 = base64.b64encode(html_content).decode('utf-8')
+
+    # Créer la réponse JSON avec les données du graphique
+    response = {'shap_plot': html_base64}
     return jsonify(response)
+
 
 @cache.cached(timeout=300, key_prefix='explain_local')
 @app.route('/explain_local/', methods=['GET'])
