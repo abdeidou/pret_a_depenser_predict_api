@@ -66,7 +66,7 @@ import numpy as np
 @cache.cached(timeout=300, key_prefix='explain_test')
 @app.route('/explain_test')
 def explain_test():
-    customer_id = request.args.get("customer_id")
+    customer_id = 100028
     # Générer le graphique SHAP pour le client spécifié
     customer_row_ohe = data_test_ohe[data_test['SK_ID_CURR'] == str(customer_id)]
     customer_index = customer_row_ohe.index
