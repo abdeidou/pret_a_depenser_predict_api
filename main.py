@@ -62,6 +62,29 @@ def predict():
                     'classe': classe}
         return json.dumps(response)
 
+import numpy as np
+@cache.cached(timeout=300, key_prefix='explain_test')
+@app.route('/explain_test')
+def explain_test():
+    # Generate data
+    x = np.linspace(0, 2 * np.pi, 100)
+    y = np.sin(x)
+    # Plot data
+    plt.plot(x, y)
+    # Save plot to BytesIO
+    buffer = io.BytesIO()
+    plt.savefig(buffer, dpi=250, format="png")
+    # Cleanup plot
+    plt.close(plt.gcf())
+    plt.clf()
+    plt.savefig(buffer, format='png')
+    image_png = buffer.getvalue()
+    buffer.close()
+    graphic = base64.b64encode(image_png)
+    graphic = graphic.decode('utf-8')
+    response = {'shap_plot': graphic}
+    return jsonify(response)
+
 @cache.cached(timeout=300, key_prefix='explain_local')
 @app.route('/explain_local/', methods=['GET'])
 def explain_local():
