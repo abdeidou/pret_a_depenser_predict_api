@@ -71,7 +71,7 @@ def explain_local():
     customer_index = customer_row_ohe.index
 
     # Créer une figure Matplotlib avec la taille spécifiée
-    fig = plt.figure(figsize=(5, 5))
+    fig = plt.figure(figsize=(20, 20))
 
     # Tracer le graphique SHAP
     shap.waterfall_plot(explanation[int(customer_index.values[0])], show=False)
