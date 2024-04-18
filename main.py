@@ -77,20 +77,7 @@ def explain_test():
     # Sauvegarder le graphique SHAP dans un fichier HTML temporaire
     tmp_html_file = "shap_graph.html"
     shap.save_html(tmp_html_file)
-
-    # Lire le contenu du fichier HTML
-    with open(tmp_html_file, "rb") as file:
-        html_content = file.read()
-
-    # Supprimer le fichier HTML temporaire
-    os.remove(tmp_html_file)
-
-    # Convertir le contenu HTML en base64
-    html_base64 = base64.b64encode(html_content).decode('utf-8')
-
-    # Créer la réponse JSON avec les données du graphique
-    response = {'shap_plot': html_base64}
-    return jsonify(response)
+    return tmp_html_file
 
 
 @cache.cached(timeout=300, key_prefix='explain_local')
