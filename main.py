@@ -69,15 +69,23 @@ def explain_local():
     # Générer le graphique SHAP pour le client spécifié
     customer_row_ohe = data_test_ohe[data_test['SK_ID_CURR'] == str(customer_id)]
     customer_index = customer_row_ohe.index
+
+    # Créer une figure Matplotlib avec la taille spécifiée
+    fig = plt.figure(figsize=(10, 10))
+
+    # Tracer le graphique SHAP
     shap.waterfall_plot(explanation[int(customer_index.values[0])], show=False)
+
     # Convertir le graphique en base64
     buf = io.BytesIO()
-    #plt.figure()
-    plt.savefig(buf, format='png')
-    plt.close()
+    fig.savefig(buf, format='png')  # Utilisation de fig pour sauvegarder le graphique
+    plt.close(fig)  # Fermer explicitement la figure
+
     buf.seek(0)
+
     # Convertir le graphique en base64
     graph_data = base64.b64encode(buf.read()).decode('utf-8')
+
     # Créer la réponse JSON avec les données du graphique
     response = {'shap_plot': graph_data}
     return jsonify(response)
