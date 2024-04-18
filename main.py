@@ -42,6 +42,25 @@ def customer_data():
     response = {'customer_data': customer_row.to_json()}
     return json.dumps(response)
 
+
+# Fonction réponse à la requête predict
+@cache.cached(timeout=300, key_prefix='predict')
+@app.route('/predict/', methods=['GET'])
+def predict():
+    customer_id = request.args.get("customer_id")
+    customer_row = data_test[data_test['SK_ID_CURR'] == str(customer_id)]
+    if not customer_row.empty:
+        customer_row_ohe = data_test_ohe.iloc[customer_row.index].drop(columns=['SK_ID_CURR'], axis=1)
+        predictions = lgbm.predict_proba(customer_row_ohe)
+        probability_negative_class = predictions[:, 1]
+        if threshold_opt < probability_negative_class:
+            classe = "refuse"
+        else:
+            classe = "accepte"
+        response = {'negative_predict': probability_negative_class.tolist(),
+                    'classe': classe}
+        return json.dumps(response)
+
 import numpy as np
 #@cache.cached(timeout=300, key_prefix='explain_test')
 #@app.route('/explain_test')
