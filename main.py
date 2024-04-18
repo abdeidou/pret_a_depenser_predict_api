@@ -99,7 +99,6 @@ def explain_global():
     response = {'shap_plot': graph_data}
     return jsonify(response)
 
-
 @app.route('/threshold')
 def threshold():
     response = {'threshold': threshold_opt}
