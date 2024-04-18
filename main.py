@@ -84,7 +84,7 @@ def explain_local():
 
 
 @cache.cached(timeout=300, key_prefix='explain_global')
-@app.route('/explain_global')
+@app.route('/explain_global/')
 def explain_global():
     # Créer le graphique SHAP beeswarm
     #shap.plots.beeswarm(shap_values)
