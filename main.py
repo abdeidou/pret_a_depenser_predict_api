@@ -66,11 +66,16 @@ import numpy as np
 @cache.cached(timeout=300, key_prefix='explain_test')
 @app.route('/explain_test')
 def explain_test():
-    # Generate data
-    x = np.linspace(0, 2 * np.pi, 100)
-    y = np.sin(x)
-    # Plot data
-    plt.plot(x, y)
+    customer_id = request.args.get("customer_id")
+    # Générer le graphique SHAP pour le client spécifié
+    customer_row_ohe = data_test_ohe[data_test['SK_ID_CURR'] == str(customer_id)]
+    customer_index = customer_row_ohe.index
+
+    # Créer une figure Matplotlib avec la taille spécifiée
+    #fig = plt.figure(figsize=(20, 20))
+
+    # Tracer le graphique SHAP
+    shap.waterfall_plot(explanation[int(customer_index.values[0])], show=False)
     # Save plot to BytesIO
     buffer = io.BytesIO()
     plt.savefig(buffer, dpi=250, format="png")
