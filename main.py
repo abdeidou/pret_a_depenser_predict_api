@@ -71,24 +71,20 @@ def explain_local():
     customer_index = customer_row_ohe.index
 
     # Créer une figure Matplotlib avec la taille spécifiée
-    fig = plt.figure(figsize=(20, 20))
+    #fig = plt.figure(figsize=(20, 20))
 
     # Tracer le graphique SHAP
     shap.waterfall_plot(explanation[int(customer_index.values[0])], show=False)
-
-    # Convertir le graphique en base64
-    buf = io.BytesIO()
-    fig.savefig(buf, format='png')  # Utilisation de fig pour sauvegarder le graphique
-    plt.close(fig)  # Fermer explicitement la figure
-
-    buf.seek(0)
-
-    # Convertir le graphique en base64
-    graph_data = base64.b64encode(buf.read()).decode('utf-8')
-
-    # Créer la réponse JSON avec les données du graphique
-    response = {'shap_plot': graph_data}
+    buffer = io.BytesIO()
+    plt.savefig(buffer, format='png')
+    buffer.seek(0)
+    image_png = buffer.getvalue()
+    buffer.close()
+    graphic = base64.b64encode(image_png)
+    graphic = graphic.decode('utf-8')
+    response = {'shap_plot': graphic}
     return jsonify(response)
+
 
 @cache.cached(timeout=300, key_prefix='explain_global')
 @app.route('/explain_global')
