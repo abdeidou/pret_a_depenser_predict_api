@@ -83,7 +83,7 @@ def explain_test():
     os.remove(tmp_html_file)
     # Convertir le contenu HTML en base64
     html_base64 = base64.b64encode(html_content).decode('utf-8')
-    return html_base64
+    return jsonify({"html_base64": html_base64})
 
 
 @cache.cached(timeout=300, key_prefix='explain_local')
