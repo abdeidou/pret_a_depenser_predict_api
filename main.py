@@ -1,6 +1,6 @@
 import os
 import json
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, send_file
 import pickle
 import pandas as pd
 import shap
@@ -70,20 +70,14 @@ def explain_test():
     # Générer le graphique SHAP pour le client spécifié
     customer_row_ohe = data_test_ohe[data_test['SK_ID_CURR'] == str(customer_id)]
     customer_index = customer_row_ohe.index
-
     # Tracer le graphique SHAP
     shap.waterfall_plot(explanation[int(customer_index.values[0])], show=False)
-    # Sauvegarder le graphique SHAP dans un fichier HTML temporaire
-    tmp_html_file = "shap_graph.html"
-    shap.save_html(tmp_html_file)
-    # Lire le contenu du fichier HTML
-    with open(tmp_html_file, "rb") as file:
-        html_content = file.read()
-    # Supprimer le fichier HTML temporaire
-    os.remove(tmp_html_file)
-    # Convertir le contenu HTML en base64
-    html_base64 = base64.b64encode(html_content).decode('utf-8')
-    return jsonify({"html_base64": html_base64})
+    # Save plot to BytesIO
+    bio = io.BytesIO()
+    plt.savefig(bio, dpi=250, format="png")
+    # Rewind BytesIO
+    bio.seek(0)
+    return send_file(bio, mimetype='image/png')
 
 
 @cache.cached(timeout=300, key_prefix='explain_local')
