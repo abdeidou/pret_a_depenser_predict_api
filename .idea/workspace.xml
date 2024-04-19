@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="buf_local _global to deploy" />
+    <list default="true" id="8f7c36e5-0e53-4b5d-b899-0754ed93fc48" name="Changes" comment="route position to deploy">
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,342 +92,6 @@
       <option name="presentableId" value="Default" />
       <updated>1711362177257</updated>
     </task>
-    <task id="LOCAL-00155" summary="response shap_plot to deploy">
-      <option name="closed" value="true" />
-      <created>1713014831850</created>
-      <option name="number" value="00155" />
-      <option name="presentableId" value="LOCAL-00155" />
-      <option name="project" value="LOCAL" />
-      <updated>1713014831851</updated>
-    </task>
-    <task id="LOCAL-00156" summary="requirements matplotlib to deploy">
-      <option name="closed" value="true" />
-      <created>1713015032223</created>
-      <option name="number" value="00156" />
-      <option name="presentableId" value="LOCAL-00156" />
-      <option name="project" value="LOCAL" />
-      <updated>1713015032223</updated>
-    </task>
-    <task id="LOCAL-00157" summary="explain local global send png to deploy">
-      <option name="closed" value="true" />
-      <created>1713016727947</created>
-      <option name="number" value="00157" />
-      <option name="presentableId" value="LOCAL-00157" />
-      <option name="project" value="LOCAL" />
-      <updated>1713016727948</updated>
-    </task>
-    <task id="LOCAL-00158" summary="shap.summary_plot to deploy">
-      <option name="closed" value="true" />
-      <created>1713017284823</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1713017284823</updated>
-    </task>
-    <task id="LOCAL-00159" summary="modif explain_global to deploy">
-      <option name="closed" value="true" />
-      <created>1713026633930</created>
-      <option name="number" value="00159" />
-      <option name="presentableId" value="LOCAL-00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1713026633930</updated>
-    </task>
-    <task id="LOCAL-00160" summary="modif explain_global to deploy">
-      <option name="closed" value="true" />
-      <created>1713027073152</created>
-      <option name="number" value="00160" />
-      <option name="presentableId" value="LOCAL-00160" />
-      <option name="project" value="LOCAL" />
-      <updated>1713027073153</updated>
-    </task>
-    <task id="LOCAL-00161" summary="modif explain_global to deploy">
-      <option name="closed" value="true" />
-      <created>1713027613421</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1713027613423</updated>
-    </task>
-    <task id="LOCAL-00162" summary="modif explain_global to deploy">
-      <option name="closed" value="true" />
-      <created>1713028406071</created>
-      <option name="number" value="00162" />
-      <option name="presentableId" value="LOCAL-00162" />
-      <option name="project" value="LOCAL" />
-      <updated>1713028406072</updated>
-    </task>
-    <task id="LOCAL-00163" summary="modif explain_global to deploy">
-      <option name="closed" value="true" />
-      <created>1713028815875</created>
-      <option name="number" value="00163" />
-      <option name="presentableId" value="LOCAL-00163" />
-      <option name="project" value="LOCAL" />
-      <updated>1713028815876</updated>
-    </task>
-    <task id="LOCAL-00164" summary="modif explain_global to deploy">
-      <option name="closed" value="true" />
-      <created>1713029522934</created>
-      <option name="number" value="00164" />
-      <option name="presentableId" value="LOCAL-00164" />
-      <option name="project" value="LOCAL" />
-      <updated>1713029522935</updated>
-    </task>
-    <task id="LOCAL-00165" summary="modif explain_global to deploy">
-      <option name="closed" value="true" />
-      <created>1713030228172</created>
-      <option name="number" value="00165" />
-      <option name="presentableId" value="LOCAL-00165" />
-      <option name="project" value="LOCAL" />
-      <updated>1713030228172</updated>
-    </task>
-    <task id="LOCAL-00166" summary="modif explain_global to deploy">
-      <option name="closed" value="true" />
-      <created>1713030523778</created>
-      <option name="number" value="00166" />
-      <option name="presentableId" value="LOCAL-00166" />
-      <option name="project" value="LOCAL" />
-      <updated>1713030523778</updated>
-    </task>
-    <task id="LOCAL-00167" summary="modif explain_global to deploy">
-      <option name="closed" value="true" />
-      <created>1713061268843</created>
-      <option name="number" value="00167" />
-      <option name="presentableId" value="LOCAL-00167" />
-      <option name="project" value="LOCAL" />
-      <updated>1713061268843</updated>
-    </task>
-    <task id="LOCAL-00168" summary="modif explain_global to deploy">
-      <option name="closed" value="true" />
-      <created>1713061753351</created>
-      <option name="number" value="00168" />
-      <option name="presentableId" value="LOCAL-00168" />
-      <option name="project" value="LOCAL" />
-      <updated>1713061753352</updated>
-    </task>
-    <task id="LOCAL-00169" summary="modif explain_global to deploy">
-      <option name="closed" value="true" />
-      <created>1713062202852</created>
-      <option name="number" value="00169" />
-      <option name="presentableId" value="LOCAL-00169" />
-      <option name="project" value="LOCAL" />
-      <updated>1713062202853</updated>
-    </task>
-    <task id="LOCAL-00170" summary="modif explain_global to deploy">
-      <option name="closed" value="true" />
-      <created>1713062683347</created>
-      <option name="number" value="00170" />
-      <option name="presentableId" value="LOCAL-00170" />
-      <option name="project" value="LOCAL" />
-      <updated>1713062683347</updated>
-    </task>
-    <task id="LOCAL-00171" summary="modif explain_global to deploy">
-      <option name="closed" value="true" />
-      <created>1713095239131</created>
-      <option name="number" value="00171" />
-      <option name="presentableId" value="LOCAL-00171" />
-      <option name="project" value="LOCAL" />
-      <updated>1713095239132</updated>
-    </task>
-    <task id="LOCAL-00172" summary="modif explain_local to deploy">
-      <option name="closed" value="true" />
-      <created>1713096059068</created>
-      <option name="number" value="00172" />
-      <option name="presentableId" value="LOCAL-00172" />
-      <option name="project" value="LOCAL" />
-      <updated>1713096059068</updated>
-    </task>
-    <task id="LOCAL-00173" summary="modif explain_local to deploy">
-      <option name="closed" value="true" />
-      <created>1713096608181</created>
-      <option name="number" value="00173" />
-      <option name="presentableId" value="LOCAL-00173" />
-      <option name="project" value="LOCAL" />
-      <updated>1713096608182</updated>
-    </task>
-    <task id="LOCAL-00174" summary="modif explain_local to deploy">
-      <option name="closed" value="true" />
-      <created>1713097012552</created>
-      <option name="number" value="00174" />
-      <option name="presentableId" value="LOCAL-00174" />
-      <option name="project" value="LOCAL" />
-      <updated>1713097012552</updated>
-    </task>
-    <task id="LOCAL-00175" summary="modif explain_local to deploy">
-      <option name="closed" value="true" />
-      <created>1713097459772</created>
-      <option name="number" value="00175" />
-      <option name="presentableId" value="LOCAL-00175" />
-      <option name="project" value="LOCAL" />
-      <updated>1713097459772</updated>
-    </task>
-    <task id="LOCAL-00176" summary="modif explain_local to deploy">
-      <option name="closed" value="true" />
-      <created>1713097978175</created>
-      <option name="number" value="00176" />
-      <option name="presentableId" value="LOCAL-00176" />
-      <option name="project" value="LOCAL" />
-      <updated>1713097978175</updated>
-    </task>
-    <task id="LOCAL-00177" summary="modif explain_local to deploy">
-      <option name="closed" value="true" />
-      <created>1713098391329</created>
-      <option name="number" value="00177" />
-      <option name="presentableId" value="LOCAL-00177" />
-      <option name="project" value="LOCAL" />
-      <updated>1713098391329</updated>
-    </task>
-    <task id="LOCAL-00178" summary="modif explain_local to deploy">
-      <option name="closed" value="true" />
-      <created>1713098753342</created>
-      <option name="number" value="00178" />
-      <option name="presentableId" value="LOCAL-00178" />
-      <option name="project" value="LOCAL" />
-      <updated>1713098753342</updated>
-    </task>
-    <task id="LOCAL-00179" summary="modif explain_local to deploy">
-      <option name="closed" value="true" />
-      <created>1713099194293</created>
-      <option name="number" value="00179" />
-      <option name="presentableId" value="LOCAL-00179" />
-      <option name="project" value="LOCAL" />
-      <updated>1713099194294</updated>
-    </task>
-    <task id="LOCAL-00180" summary="modif explain_local to deploy">
-      <option name="closed" value="true" />
-      <created>1713099939730</created>
-      <option name="number" value="00180" />
-      <option name="presentableId" value="LOCAL-00180" />
-      <option name="project" value="LOCAL" />
-      <updated>1713099939731</updated>
-    </task>
-    <task id="LOCAL-00181" summary="modif explain_local to deploy">
-      <option name="closed" value="true" />
-      <created>1713100496192</created>
-      <option name="number" value="00181" />
-      <option name="presentableId" value="LOCAL-00181" />
-      <option name="project" value="LOCAL" />
-      <updated>1713100496193</updated>
-    </task>
-    <task id="LOCAL-00182" summary="modif explain_local to deploy">
-      <option name="closed" value="true" />
-      <created>1713101499233</created>
-      <option name="number" value="00182" />
-      <option name="presentableId" value="LOCAL-00182" />
-      <option name="project" value="LOCAL" />
-      <updated>1713101499234</updated>
-    </task>
-    <task id="LOCAL-00183" summary="modif explain_local to deploy">
-      <option name="closed" value="true" />
-      <created>1713101969437</created>
-      <option name="number" value="00183" />
-      <option name="presentableId" value="LOCAL-00183" />
-      <option name="project" value="LOCAL" />
-      <updated>1713101969437</updated>
-    </task>
-    <task id="LOCAL-00184" summary="modif explain_local to deploy">
-      <option name="closed" value="true" />
-      <created>1713102444771</created>
-      <option name="number" value="00184" />
-      <option name="presentableId" value="LOCAL-00184" />
-      <option name="project" value="LOCAL" />
-      <updated>1713102444771</updated>
-    </task>
-    <task id="LOCAL-00185" summary="modif explain_local to deploy">
-      <option name="closed" value="true" />
-      <created>1713102916036</created>
-      <option name="number" value="00185" />
-      <option name="presentableId" value="LOCAL-00185" />
-      <option name="project" value="LOCAL" />
-      <updated>1713102916036</updated>
-    </task>
-    <task id="LOCAL-00186" summary="modif explain_local to deploy">
-      <option name="closed" value="true" />
-      <created>1713103428093</created>
-      <option name="number" value="00186" />
-      <option name="presentableId" value="LOCAL-00186" />
-      <option name="project" value="LOCAL" />
-      <updated>1713103428094</updated>
-    </task>
-    <task id="LOCAL-00187" summary="modif explain_local to deploy">
-      <option name="closed" value="true" />
-      <created>1713103922137</created>
-      <option name="number" value="00187" />
-      <option name="presentableId" value="LOCAL-00187" />
-      <option name="project" value="LOCAL" />
-      <updated>1713103922138</updated>
-    </task>
-    <task id="LOCAL-00188" summary="modif explain_local to deploy">
-      <option name="closed" value="true" />
-      <created>1713112073639</created>
-      <option name="number" value="00188" />
-      <option name="presentableId" value="LOCAL-00188" />
-      <option name="project" value="LOCAL" />
-      <updated>1713112073640</updated>
-    </task>
-    <task id="LOCAL-00189" summary="modif explain_local to deploy">
-      <option name="closed" value="true" />
-      <created>1713112392865</created>
-      <option name="number" value="00189" />
-      <option name="presentableId" value="LOCAL-00189" />
-      <option name="project" value="LOCAL" />
-      <updated>1713112392865</updated>
-    </task>
-    <task id="LOCAL-00190" summary="modif explain_local to deploy">
-      <option name="closed" value="true" />
-      <created>1713112685591</created>
-      <option name="number" value="00190" />
-      <option name="presentableId" value="LOCAL-00190" />
-      <option name="project" value="LOCAL" />
-      <updated>1713112685591</updated>
-    </task>
-    <task id="LOCAL-00191" summary="modif explain_local to deploy">
-      <option name="closed" value="true" />
-      <created>1713113181238</created>
-      <option name="number" value="00191" />
-      <option name="presentableId" value="LOCAL-00191" />
-      <option name="project" value="LOCAL" />
-      <updated>1713113181238</updated>
-    </task>
-    <task id="LOCAL-00192" summary="modif explain_local to deploy">
-      <option name="closed" value="true" />
-      <created>1713113518105</created>
-      <option name="number" value="00192" />
-      <option name="presentableId" value="LOCAL-00192" />
-      <option name="project" value="LOCAL" />
-      <updated>1713113518106</updated>
-    </task>
-    <task id="LOCAL-00193" summary="modif explain_local to deploy">
-      <option name="closed" value="true" />
-      <created>1713114156495</created>
-      <option name="number" value="00193" />
-      <option name="presentableId" value="LOCAL-00193" />
-      <option name="project" value="LOCAL" />
-      <updated>1713114156496</updated>
-    </task>
-    <task id="LOCAL-00194" summary="modif explain_local to deploy">
-      <option name="closed" value="true" />
-      <created>1713114836556</created>
-      <option name="number" value="00194" />
-      <option name="presentableId" value="LOCAL-00194" />
-      <option name="project" value="LOCAL" />
-      <updated>1713114836556</updated>
-    </task>
-    <task id="LOCAL-00195" summary="modif explain_local to deploy">
-      <option name="closed" value="true" />
-      <created>1713115170964</created>
-      <option name="number" value="00195" />
-      <option name="presentableId" value="LOCAL-00195" />
-      <option name="project" value="LOCAL" />
-      <updated>1713115170964</updated>
-    </task>
-    <task id="LOCAL-00196" summary="modif explain_local to deploy">
-      <option name="closed" value="true" />
-      <created>1713115859287</created>
-      <option name="number" value="00196" />
-      <option name="presentableId" value="LOCAL-00196" />
-      <option name="project" value="LOCAL" />
-      <updated>1713115859287</updated>
-    </task>
     <task id="LOCAL-00197" summary="modif explain_local to deploy">
       <option name="closed" value="true" />
       <created>1713116517874</created>
@@ -482,7 +148,343 @@
       <option name="project" value="LOCAL" />
       <updated>1713442797862</updated>
     </task>
-    <option name="localTasksCounter" value="204" />
+    <task id="LOCAL-00204" summary="buf_local _global to deploy">
+      <option name="closed" value="true" />
+      <created>1713443912619</created>
+      <option name="number" value="00204" />
+      <option name="presentableId" value="LOCAL-00204" />
+      <option name="project" value="LOCAL" />
+      <updated>1713443912623</updated>
+    </task>
+    <task id="LOCAL-00205" summary="plt.close() to deploy">
+      <option name="closed" value="true" />
+      <created>1713443968427</created>
+      <option name="number" value="00205" />
+      <option name="presentableId" value="LOCAL-00205" />
+      <option name="project" value="LOCAL" />
+      <updated>1713443968427</updated>
+    </task>
+    <task id="LOCAL-00206" summary="plt figsize to deploy">
+      <option name="closed" value="true" />
+      <created>1713446194635</created>
+      <option name="number" value="00206" />
+      <option name="presentableId" value="LOCAL-00206" />
+      <option name="project" value="LOCAL" />
+      <updated>1713446194635</updated>
+    </task>
+    <task id="LOCAL-00207" summary="fig_local to deploy">
+      <option name="closed" value="true" />
+      <created>1713446908838</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1713446908838</updated>
+    </task>
+    <task id="LOCAL-00208" summary="undo plt.figure to deploy">
+      <option name="closed" value="true" />
+      <created>1713447286812</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1713447286812</updated>
+    </task>
+    <task id="LOCAL-00209" summary="add fig = plt.figure to deploy">
+      <option name="closed" value="true" />
+      <created>1713450361863</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
+      <option name="project" value="LOCAL" />
+      <updated>1713450361864</updated>
+    </task>
+    <task id="LOCAL-00210" summary="figsize=(5, 5) to deploy">
+      <option name="closed" value="true" />
+      <created>1713451193982</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1713451193982</updated>
+    </task>
+    <task id="LOCAL-00211" summary="figsize=(20, 20) to deploy">
+      <option name="closed" value="true" />
+      <created>1713451573984</created>
+      <option name="number" value="00211" />
+      <option name="presentableId" value="LOCAL-00211" />
+      <option name="project" value="LOCAL" />
+      <updated>1713451573984</updated>
+    </task>
+    <task id="LOCAL-00212" summary="buffer.getvalue() to deploy">
+      <option name="closed" value="true" />
+      <created>1713452423454</created>
+      <option name="number" value="00212" />
+      <option name="presentableId" value="LOCAL-00212" />
+      <option name="project" value="LOCAL" />
+      <updated>1713452423454</updated>
+    </task>
+    <task id="LOCAL-00213" summary="explain_test to deploy">
+      <option name="closed" value="true" />
+      <created>1713453150036</created>
+      <option name="number" value="00213" />
+      <option name="presentableId" value="LOCAL-00213" />
+      <option name="project" value="LOCAL" />
+      <updated>1713453150037</updated>
+    </task>
+    <task id="LOCAL-00214" summary="explain_test to deploy">
+      <option name="closed" value="true" />
+      <created>1713453487164</created>
+      <option name="number" value="00214" />
+      <option name="presentableId" value="LOCAL-00214" />
+      <option name="project" value="LOCAL" />
+      <updated>1713453487164</updated>
+    </task>
+    <task id="LOCAL-00215" summary="shap.save_html to deploy">
+      <option name="closed" value="true" />
+      <created>1713454251379</created>
+      <option name="number" value="00215" />
+      <option name="presentableId" value="LOCAL-00215" />
+      <option name="project" value="LOCAL" />
+      <updated>1713454251379</updated>
+    </task>
+    <task id="LOCAL-00216" summary="return tmp_html_file to deploy">
+      <option name="closed" value="true" />
+      <created>1713454723287</created>
+      <option name="number" value="00216" />
+      <option name="presentableId" value="LOCAL-00216" />
+      <option name="project" value="LOCAL" />
+      <updated>1713454723287</updated>
+    </task>
+    <task id="LOCAL-00217" summary="return html_base64 to deploy">
+      <option name="closed" value="true" />
+      <created>1713464116613</created>
+      <option name="number" value="00217" />
+      <option name="presentableId" value="LOCAL-00217" />
+      <option name="project" value="LOCAL" />
+      <updated>1713464116613</updated>
+    </task>
+    <task id="LOCAL-00218" summary="return html_base64 to deploy">
+      <option name="closed" value="true" />
+      <created>1713465187620</created>
+      <option name="number" value="00218" />
+      <option name="presentableId" value="LOCAL-00218" />
+      <option name="project" value="LOCAL" />
+      <updated>1713465187620</updated>
+    </task>
+    <task id="LOCAL-00219" summary="send_file to deploy">
+      <option name="closed" value="true" />
+      <created>1713466372457</created>
+      <option name="number" value="00219" />
+      <option name="presentableId" value="LOCAL-00219" />
+      <option name="project" value="LOCAL" />
+      <updated>1713466372457</updated>
+    </task>
+    <task id="LOCAL-00220" summary="send_file to deploy">
+      <option name="closed" value="true" />
+      <created>1713466857001</created>
+      <option name="number" value="00220" />
+      <option name="presentableId" value="LOCAL-00220" />
+      <option name="project" value="LOCAL" />
+      <updated>1713466857001</updated>
+    </task>
+    <task id="LOCAL-00221" summary="send_file to deploy">
+      <option name="closed" value="true" />
+      <created>1713467776392</created>
+      <option name="number" value="00221" />
+      <option name="presentableId" value="LOCAL-00221" />
+      <option name="project" value="LOCAL" />
+      <updated>1713467776392</updated>
+    </task>
+    <task id="LOCAL-00222" summary="send_file to deploy">
+      <option name="closed" value="true" />
+      <created>1713468264736</created>
+      <option name="number" value="00222" />
+      <option name="presentableId" value="LOCAL-00222" />
+      <option name="project" value="LOCAL" />
+      <updated>1713468264736</updated>
+    </task>
+    <task id="LOCAL-00223" summary="send_file to deploy">
+      <option name="closed" value="true" />
+      <created>1713469338330</created>
+      <option name="number" value="00223" />
+      <option name="presentableId" value="LOCAL-00223" />
+      <option name="project" value="LOCAL" />
+      <updated>1713469338330</updated>
+    </task>
+    <task id="LOCAL-00224" summary="plt.close() to deploy">
+      <option name="closed" value="true" />
+      <created>1713510371079</created>
+      <option name="number" value="00224" />
+      <option name="presentableId" value="LOCAL-00224" />
+      <option name="project" value="LOCAL" />
+      <updated>1713510371079</updated>
+    </task>
+    <task id="LOCAL-00225" summary="plt.figure(figsize=(50, 50)) to deploy">
+      <option name="closed" value="true" />
+      <created>1713511346270</created>
+      <option name="number" value="00225" />
+      <option name="presentableId" value="LOCAL-00225" />
+      <option name="project" value="LOCAL" />
+      <updated>1713511346270</updated>
+    </task>
+    <task id="LOCAL-00226" summary="plt.figure() to deploy">
+      <option name="closed" value="true" />
+      <created>1713512666252</created>
+      <option name="number" value="00226" />
+      <option name="presentableId" value="LOCAL-00226" />
+      <option name="project" value="LOCAL" />
+      <updated>1713512666252</updated>
+    </task>
+    <task id="LOCAL-00227" summary="to deploy">
+      <option name="closed" value="true" />
+      <created>1713513279447</created>
+      <option name="number" value="00227" />
+      <option name="presentableId" value="LOCAL-00227" />
+      <option name="project" value="LOCAL" />
+      <updated>1713513279447</updated>
+    </task>
+    <task id="LOCAL-00228" summary="png pdf to deploy">
+      <option name="closed" value="true" />
+      <created>1713513638475</created>
+      <option name="number" value="00228" />
+      <option name="presentableId" value="LOCAL-00228" />
+      <option name="project" value="LOCAL" />
+      <updated>1713513638475</updated>
+    </task>
+    <task id="LOCAL-00229" summary="png to deploy">
+      <option name="closed" value="true" />
+      <created>1713513947689</created>
+      <option name="number" value="00229" />
+      <option name="presentableId" value="LOCAL-00229" />
+      <option name="project" value="LOCAL" />
+      <updated>1713513947689</updated>
+    </task>
+    <task id="LOCAL-00230" summary="feature_names to deploy">
+      <option name="closed" value="true" />
+      <created>1713518375972</created>
+      <option name="number" value="00230" />
+      <option name="presentableId" value="LOCAL-00230" />
+      <option name="project" value="LOCAL" />
+      <updated>1713518375972</updated>
+    </task>
+    <task id="LOCAL-00231" summary="feature_names.tolist() to deploy">
+      <option name="closed" value="true" />
+      <created>1713518687538</created>
+      <option name="number" value="00231" />
+      <option name="presentableId" value="LOCAL-00231" />
+      <option name="project" value="LOCAL" />
+      <updated>1713518687538</updated>
+    </task>
+    <task id="LOCAL-00232" summary="feature_names=['A', 'B', 'C', 'D', 'E'] to deploy">
+      <option name="closed" value="true" />
+      <created>1713519163781</created>
+      <option name="number" value="00232" />
+      <option name="presentableId" value="LOCAL-00232" />
+      <option name="project" value="LOCAL" />
+      <updated>1713519163781</updated>
+    </task>
+    <task id="LOCAL-00233" summary="feature_names.tolist() to deploy">
+      <option name="closed" value="true" />
+      <created>1713519701583</created>
+      <option name="number" value="00233" />
+      <option name="presentableId" value="LOCAL-00233" />
+      <option name="project" value="LOCAL" />
+      <updated>1713519701584</updated>
+    </task>
+    <task id="LOCAL-00234" summary="str(feature_names) to deploy">
+      <option name="closed" value="true" />
+      <created>1713520023877</created>
+      <option name="number" value="00234" />
+      <option name="presentableId" value="LOCAL-00234" />
+      <option name="project" value="LOCAL" />
+      <updated>1713520023877</updated>
+    </task>
+    <task id="LOCAL-00235" summary="return jsonify(response) to deploy">
+      <option name="closed" value="true" />
+      <created>1713520484171</created>
+      <option name="number" value="00235" />
+      <option name="presentableId" value="LOCAL-00235" />
+      <option name="project" value="LOCAL" />
+      <updated>1713520484172</updated>
+    </task>
+    <task id="LOCAL-00236" summary="feature_names_list to deploy">
+      <option name="closed" value="true" />
+      <created>1713520925118</created>
+      <option name="number" value="00236" />
+      <option name="presentableId" value="LOCAL-00236" />
+      <option name="project" value="LOCAL" />
+      <updated>1713520925118</updated>
+    </task>
+    <task id="LOCAL-00237" summary="feature_names_list = X.columns.tolist() to deploy">
+      <option name="closed" value="true" />
+      <created>1713521324488</created>
+      <option name="number" value="00237" />
+      <option name="presentableId" value="LOCAL-00237" />
+      <option name="project" value="LOCAL" />
+      <updated>1713521324488</updated>
+    </task>
+    <task id="LOCAL-00238" summary="route position to deploy">
+      <option name="closed" value="true" />
+      <created>1713522181925</created>
+      <option name="number" value="00238" />
+      <option name="presentableId" value="LOCAL-00238" />
+      <option name="project" value="LOCAL" />
+      <updated>1713522181926</updated>
+    </task>
+    <task id="LOCAL-00239" summary="route position to deploy">
+      <option name="closed" value="true" />
+      <created>1713522649212</created>
+      <option name="number" value="00239" />
+      <option name="presentableId" value="LOCAL-00239" />
+      <option name="project" value="LOCAL" />
+      <updated>1713522649213</updated>
+    </task>
+    <task id="LOCAL-00240" summary="route position to deploy">
+      <option name="closed" value="true" />
+      <created>1713523282136</created>
+      <option name="number" value="00240" />
+      <option name="presentableId" value="LOCAL-00240" />
+      <option name="project" value="LOCAL" />
+      <updated>1713523282136</updated>
+    </task>
+    <task id="LOCAL-00241" summary="route position to deploy">
+      <option name="closed" value="true" />
+      <created>1713523758587</created>
+      <option name="number" value="00241" />
+      <option name="presentableId" value="LOCAL-00241" />
+      <option name="project" value="LOCAL" />
+      <updated>1713523758587</updated>
+    </task>
+    <task id="LOCAL-00242" summary="route position to deploy">
+      <option name="closed" value="true" />
+      <created>1713524911603</created>
+      <option name="number" value="00242" />
+      <option name="presentableId" value="LOCAL-00242" />
+      <option name="project" value="LOCAL" />
+      <updated>1713524911603</updated>
+    </task>
+    <task id="LOCAL-00243" summary="route position to deploy">
+      <option name="closed" value="true" />
+      <created>1713524933557</created>
+      <option name="number" value="00243" />
+      <option name="presentableId" value="LOCAL-00243" />
+      <option name="project" value="LOCAL" />
+      <updated>1713524933557</updated>
+    </task>
+    <task id="LOCAL-00244" summary="route position to deploy">
+      <option name="closed" value="true" />
+      <created>1713525347760</created>
+      <option name="number" value="00244" />
+      <option name="presentableId" value="LOCAL-00244" />
+      <option name="project" value="LOCAL" />
+      <updated>1713525347761</updated>
+    </task>
+    <task id="LOCAL-00245" summary="route position to deploy">
+      <option name="closed" value="true" />
+      <created>1713526274576</created>
+      <option name="number" value="00245" />
+      <option name="presentableId" value="LOCAL-00245" />
+      <option name="project" value="LOCAL" />
+      <updated>1713526274576</updated>
+    </task>
+    <option name="localTasksCounter" value="246" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -497,31 +499,31 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add threshold route" />
-    <MESSAGE value="add shap_values_local and global" />
-    <MESSAGE value="to deploy" />
-    <MESSAGE value="correct shap_values_global to deploy" />
-    <MESSAGE value="add explain_global route to deploy" />
-    <MESSAGE value="add top explain_global  to deploy" />
-    <MESSAGE value="add explain_local and global to deploy" />
-    <MESSAGE value="add TreeExplainer to deploy" />
-    <MESSAGE value="delete TreeExplainer to deploy" />
-    <MESSAGE value="add explain to deploy" />
-    <MESSAGE value="shap_values_json to deploy" />
-    <MESSAGE value="compressed_shap_values to deploy" />
+    <MESSAGE value="fig_local to deploy" />
+    <MESSAGE value="undo plt.figure to deploy" />
+    <MESSAGE value="add fig = plt.figure to deploy" />
+    <MESSAGE value="figsize=(5, 5) to deploy" />
+    <MESSAGE value="figsize=(20, 20) to deploy" />
+    <MESSAGE value="buffer.getvalue() to deploy" />
+    <MESSAGE value="explain_test to deploy" />
+    <MESSAGE value="shap.save_html to deploy" />
+    <MESSAGE value="return tmp_html_file to deploy" />
+    <MESSAGE value="return html_base64 to deploy" />
     <MESSAGE value="send_file to deploy" />
-    <MESSAGE value="make_response to deploy" />
-    <MESSAGE value="explain_cached to deploy" />
-    <MESSAGE value="msgpack to deploy" />
-    <MESSAGE value="requirements msgpack to deploy" />
-    <MESSAGE value="return packed_data to deploy" />
-    <MESSAGE value="response shap_plot to deploy" />
-    <MESSAGE value="requirements matplotlib to deploy" />
-    <MESSAGE value="explain local global send png to deploy" />
-    <MESSAGE value="shap.summary_plot to deploy" />
-    <MESSAGE value="modif explain_global to deploy" />
-    <MESSAGE value="modif explain_local to deploy" />
-    <MESSAGE value="buf_local _global to deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="buf_local _global to deploy" />
+    <MESSAGE value="plt.close() to deploy" />
+    <MESSAGE value="plt.figure(figsize=(50, 50)) to deploy" />
+    <MESSAGE value="plt.figure() to deploy" />
+    <MESSAGE value="to deploy" />
+    <MESSAGE value="png pdf to deploy" />
+    <MESSAGE value="png to deploy" />
+    <MESSAGE value="feature_names to deploy" />
+    <MESSAGE value="feature_names=['A', 'B', 'C', 'D', 'E'] to deploy" />
+    <MESSAGE value="feature_names.tolist() to deploy" />
+    <MESSAGE value="str(feature_names) to deploy" />
+    <MESSAGE value="return jsonify(response) to deploy" />
+    <MESSAGE value="feature_names_list to deploy" />
+    <MESSAGE value="feature_names_list = X.columns.tolist() to deploy" />
+    <MESSAGE value="route position to deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="route position to deploy" />
   </component>
 </project>
