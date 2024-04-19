@@ -106,7 +106,7 @@ def explain_global():
 @app.route('/position/', methods=['GET'])
 def position():
     customer_id = request.args.get("customer_id")
-    feature = customer_id = request.args.get("variable")
+    feature = request.args.get("variable")
     client_variable = data_test_ohe.loc[data_test_ohe['SK_ID_CURR'] == customer_id, feature]
     response = {'client_variable': client_variable}
     return jsonify(response)
