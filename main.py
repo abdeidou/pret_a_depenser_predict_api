@@ -115,8 +115,8 @@ def position():
     #response = {'client_variable': 9}
     return jsonify(response)
 
-@app.route('/feature_names_list')
-def feature_names_list():
+@app.route('/feature_names')
+def feature_names():
     response = {'feature_names': feature_names_list}
     return jsonify(response)
 
