@@ -117,7 +117,7 @@ def position():
 
 @app.route('/feature_names')
 def feature_names():
-    response = {'feature_names': features.tolist()}
+    response = {'feature_names': features}
     return jsonify(response)
 
 
