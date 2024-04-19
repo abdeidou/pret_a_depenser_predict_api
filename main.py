@@ -114,8 +114,8 @@ def position():
     response = {'client_variable': client_variable.tolist(), 'other_clients_min': other_clients_min, 'other_clients_max': other_clients_max}
     return jsonify(response)
 
-@app.route('/feature_names')
-def feature_names():
+@app.route('/feature_names_list')
+def feature_names_list():
     response = {'feature_names': feature_names_list}
     return jsonify(response)
 
