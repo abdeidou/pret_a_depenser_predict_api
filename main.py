@@ -102,6 +102,16 @@ def explain_global():
     return send_file(buffer, mimetype='image/png')
 
 
+@cache.cached(timeout=300, key_prefix='position')
+@app.route('/position/', methods=['GET'])
+def position():
+    customer_id = request.args.get("customer_id")
+    feature = customer_id = request.args.get("variable")
+    client_variable = data_test_ohe.loc[data_test_ohe['SK_ID_CURR'] == customer_id, feature]
+    response = {'client_variable': client_variable}
+    return jsonify(response)
+
+
 @app.route('/feature_names')
 def feature_names():
     response = {'feature_names': feature_names_list}
