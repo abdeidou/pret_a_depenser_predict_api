@@ -19,7 +19,7 @@ model_path = "./data/selected_model.pickle"
 lgbm = pickle.load(open(model_path, 'rb'))
 threshold_opt = 0.65
 X = data_test_ohe.drop(columns=['SK_ID_CURR'], axis=1)
-feature_names = X.columns.tolist()
+feature_names = ['A', 'B', 'C', 'D', 'E']
 explainer = shap.Explainer(lgbm)
 shap_values = explainer.shap_values(X)
 explainer_tree = shap.TreeExplainer(lgbm)
@@ -103,7 +103,7 @@ def explain_global():
 
 @app.route('/feature_names')
 def feature_names():
-    response = {'feature_names': feature_names.tolist()}
+    response = {'feature_names': feature_names}
     return json.dumps(response)
 
 
