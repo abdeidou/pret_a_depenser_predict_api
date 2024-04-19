@@ -78,6 +78,7 @@ def explain_local():
     # Save plot to BytesIO
     buffer = io.BytesIO()
     plt.savefig(buffer, dpi=250, format="png")
+    plt.close()
     # Rewind BytesIO
     buffer.seek(0)
     return send_file(buffer, mimetype='image/png')
@@ -93,6 +94,7 @@ def explain_global():
     # Save plot to BytesIO
     buffer = io.BytesIO()
     plt.savefig(buffer, dpi=250, format="png")
+    plt.close()
     # Rewind BytesIO
     buffer.seek(0)
     return send_file(buffer, mimetype='image/png')
