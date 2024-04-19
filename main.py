@@ -77,11 +77,11 @@ def explain_local():
     shap.waterfall_plot(explanation[int(customer_index.values[0])], show=False)
     # Save plot to BytesIO
     buffer = io.BytesIO()
-    plt.savefig(buffer, dpi=250, format="pdf")
+    plt.savefig(buffer, dpi=250, format="png")
     plt.close()
     # Rewind BytesIO
     buffer.seek(0)
-    return send_file(buffer, mimetype='image/pdf')
+    return send_file(buffer, mimetype='image/png')
 
 
 @cache.cached(timeout=300, key_prefix='explain_global')
