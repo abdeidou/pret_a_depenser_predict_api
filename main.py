@@ -77,6 +77,7 @@ def explain_local():
     shap.waterfall_plot(explanation[int(customer_index.values[0])], show=False)
     # Save plot to BytesIO
     buffer = io.BytesIO()
+    plt.figure(figsize=(50, 50))
     plt.savefig(buffer, dpi=250, format="png")
     plt.close()
     # Rewind BytesIO
