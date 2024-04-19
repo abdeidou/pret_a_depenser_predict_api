@@ -108,7 +108,7 @@ def position():
     customer_id = request.args.get("customer_id")
     feature = request.args.get("variable")
     client_variable = data_test_ohe.loc[data_test_ohe['SK_ID_CURR'] == str(customer_id), feature]
-    response = {'client_variable': feature}
+    response = {'client_variable': client_variable}
     return jsonify(response)
 
 
