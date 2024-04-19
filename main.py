@@ -103,7 +103,7 @@ def explain_global():
 
 @app.route('/feature_names')
 def feature_names():
-    response = {'feature_names': feature_names}
+    response = {'feature_names': feature_names.tolist()}
     return json.dumps(response)
 
 
