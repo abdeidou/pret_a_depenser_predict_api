@@ -7,6 +7,7 @@ import shap
 import matplotlib.pyplot as plt
 import io
 from flask_caching import Cache
+from flask import jsonify
 
 # Créer une instance de l'application Flask
 app = Flask(__name__)
@@ -103,8 +104,9 @@ def explain_global():
 
 @app.route('/feature_names')
 def feature_names():
-    response = {'feature_names': str(feature_names)}
-    return json.dumps(response)
+    response = {'feature_names': feature_names}
+    #return json.dumps(response)
+    return jsonify(response)
 
 
 @app.route('/threshold')
