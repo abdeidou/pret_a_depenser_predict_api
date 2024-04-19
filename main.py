@@ -111,26 +111,8 @@ def position():
     # Calculer le maximum et le minimum des autres clients
     other_clients_max = data_test_ohe.loc[data_test_ohe['SK_ID_CURR'] != str(customer_id), feature].max()
     other_clients_min = data_test_ohe.loc[data_test_ohe['SK_ID_CURR'] != str(customer_id), feature].min()
-
-    # Créer un graphique avec une seule variable sur l'axe Y
-    plt.barh(data_test_ohe['SK_ID_CURR'], data_test_ohe[feature], color='lightblue', label='Autres clients')
-    plt.barh(str(customer_id), client_variable, color='red', label='Client actuel')
-
-    # Ajouter des titres et des étiquettes aux axes
-    plt.title('Positionnement du client par rapport aux autres clients')
-    plt.xlabel('Valeur de la variable')
-    plt.ylabel('Clients')
-
-    # Save plot to BytesIO
-    buffer = io.BytesIO()
-    plt.savefig(buffer, dpi=250, format="png")
-    plt.close()
-    # Rewind BytesIO
-    buffer.seek(0)
-    return send_file(buffer, mimetype='image/png')
-
-    #response = {'client_variable': client_variable.tolist(), 'other_clients_min': other_clients_min, 'other_clients_max': other_clients_max}
-    #return jsonify(response)
+    response = {'client_variable': client_variable.tolist(), 'other_clients_min': other_clients_min, 'other_clients_max': other_clients_max}
+    return jsonify(response)
 
 
 @app.route('/feature_names')
