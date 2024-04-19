@@ -107,12 +107,12 @@ def explain_global():
 def position():
     customer_id = request.args.get("customer_id")
     feature = request.args.get("variable")
-    #client_variable = data_test_ohe.loc[data_test_ohe['SK_ID_CURR'] == str(customer_id), feature].values[0]
+    client_variable = data_test_ohe.loc[data_test_ohe['SK_ID_CURR'] == str(customer_id), feature].values[0]
     # Calculer le maximum et le minimum des autres clients
-    #other_clients_max = data_test_ohe.loc[data_test_ohe['SK_ID_CURR'] != str(customer_id), feature].max()
-    #other_clients_min = data_test_ohe.loc[data_test_ohe['SK_ID_CURR'] != str(customer_id), feature].min()
-    #response = {'client_variable': client_variable.tolist(), 'other_clients_min': other_clients_min, 'other_clients_max': other_clients_max}
-    response = {'client_variable': 9}
+    other_clients_max = data_test_ohe.loc[data_test_ohe['SK_ID_CURR'] != str(customer_id), feature].max()
+    other_clients_min = data_test_ohe.loc[data_test_ohe['SK_ID_CURR'] != str(customer_id), feature].min()
+    response = {'client_variable': client_variable.tolist(), 'other_clients_min': other_clients_min.tolist(), 'other_clients_max': other_clients_max.tolist()}
+    #response = {'client_variable': 9}
     return jsonify(response)
 
 @app.route('/feature_names_list')
