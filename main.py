@@ -5,6 +5,8 @@ import pickle
 import pandas as pd
 import shap
 import matplotlib
+
+
 from flask import Flask, request, send_file
 from flask_caching import Cache
 from flask import jsonify
@@ -140,4 +142,6 @@ def threshold():
     return jsonify(response)
 
 if __name__ == "__main__":
-    app.run(debug=False, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
+    #app.run(debug=False, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
+    gunicorn -w 4 -b 0.0.0.0:8080 main:app
+
