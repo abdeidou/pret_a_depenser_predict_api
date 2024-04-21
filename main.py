@@ -142,6 +142,6 @@ def threshold():
     return jsonify(response)
 
 if __name__ == "__main__":
-    #app.run(debug=False, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
-    gunicorn -w 4 -b 0.0.0.0:8080 main:app
+    app.run(debug=False, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
+    #gunicorn -w 4 -b 0.0.0.0:8080 main:app
 
